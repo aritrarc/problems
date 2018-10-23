@@ -15,31 +15,42 @@ namespace SpecialPalindrome
              int count = 0;
              int start = 0;
              int x = str.Length;
-             int result = palindromeRecurse(str, count, start, x) + x;
+             int result = palindromeRecurse(str);
              Console.WriteLine(result.ToString());
         }
 
-        private static int palindromeRecurse(string str, int count, int start, int lenth)
-        {
+        private static int palindromeRecurse(string str){
+
             int n = str.Length;
-            for(int i=start; i < str.Length - 1; i++ )
+            int result = 0;
+            int[] sameChar = new int[n];
+            int i = 0;
+            while (i < n)
             {
-                if( str[i] == str[i+1])
+                int samecharCount = 1;
+                int j = i + 1;
+                while( j < n && str[i] == str[j] )
                 {
-                    count++;
-                    int j = i+1;
-                    count = palindromeRecurse(str.Substring(j), count, 0, str.Substring(j).Length + 1);
+                    j++; samecharCount++;
                 }
-                else if ( i != n-2)
-                {
-                    if(str[i] == str[i+2])
-                    {
-                        count++;
-                    }
+                result += (samecharCount * (samecharCount + 1)/2);
+                sameChar[i] = samecharCount;
+                i = j;
+            } 
+
+            for( int  j=1; j<n; j++)
+            {
+                if(str[j] == str[j - 1]){
+                    sameChar[j] = sameChar[j - 1];
+                }
+
+                if(j > 0 && j < (n - 1) && 
+                (str[j - 1] == str[j + 1] && str[j] != str[j - 1])) {
+                    result += Math.Min(sameChar[j - 1], 
+                          sameChar[j + 1]);
                 }
             }
-
-            return count;
+            return result;
         }
        
     }
