@@ -6,11 +6,9 @@ namespace Pairs
 {
     public class Pairs{
 
-        // A string is said to be a special palindromic string if either of two conditions is met:
-        // All of the characters are the same, e.g. aaa.
-        // All characters except the middle one are the same, e.g. aadaa.
-        // A special palindromic substring is any substring of a string which meets one of those criteria. Given a string, determine how many special palindromic substrings can be formed from it.
-        public static void FindPairs(int[] arr, int num)
+        //You will be given an array of integers and a target value. Determine the number of pairs of array elements 
+        //that have a difference equal to a target value.
+        public static void FindPairs(int[] arr, int k)
         {
              int result = 0;
              Array.Sort(arr);
@@ -19,17 +17,17 @@ namespace Pairs
              while( j < arr.Length)
              {
                  int diff = arr[j] - arr[i];
-                 if(diff == num)
+                 if(diff == k)
                  {
                      result++;
                      j++;
                  }
-                 else if ( diff < num)
+                 else if ( diff < k)
                  {
-                     i++;
+                     j++;
                  }
                  else{
-                     j++;
+                     i++;
                  }
              }
              Console.WriteLine(result.ToString());
