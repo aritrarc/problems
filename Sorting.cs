@@ -1,14 +1,60 @@
-using System;
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
 using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
 
-namespace Sorting
-{
-    public class Sorting{
+public class Sorting {
 
-        // This code is used to reverse a string without using any other DS.
-        public static void InsertionSort(int[] arr)
+    // Various sorting algorithms
+    public static void SelectionSort(int[] arr) {
+        Console.WriteLine("Selection Sort");
+
+        for(int i=0; i<arr.Length; i++)
         {
+            for(int j=i+1; j <arr.Length; j++)
+            {
+                if(arr[j] < arr[i])
+                {
+                    int temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+        }
+        PrintSortedArray(arr);
+    }
+
+    public static void BubbleSort(int[] arr) {
+        Console.WriteLine("Bubbble Sort");
+
+        for(int i=arr.Length -1; i >= 0 ; i--)
+        {
+            for(int j=i-1; j >= 0; j--)
+            {
+                if(arr[j] >  arr[i])
+                {
+                    int temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+        }
+        PrintSortedArray(arr);
+    }
+
+    public static void InsertionSort(int[] arr)
+        {
+            Console.WriteLine("Insertion Sort");
+            
              for(int i = 1; i < arr.Length; i++)
              {
                  for(int j = 0; j < i ; j++)
@@ -28,16 +74,14 @@ namespace Sorting
                  }
              }
 
-             printSortedArray(arr);
+             PrintSortedArray(arr);
         }
 
-        private static void printSortedArray(int[] arr)
+    private static void PrintSortedArray(int[] arr){
+
+        for(int x = 0; x < arr.Length; x++)
         {
-            for(int i = 0 ; i < arr.Length; i++)
-            {
-                Console.WriteLine(arr[i]);
-            }
+            Console.WriteLine(arr[x]);
         }
-       
     }
-} 
+}

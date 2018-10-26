@@ -13,7 +13,7 @@ namespace HelloWorld
             //SpecialPalindrome.SpecialPalindrome.FindSpecialPalindromeCount("nnonnpoo");
             //SpecialPalindrome.SpecialPalindrome.FindSpecialPalindromeCount("aaaa");
             //Solution.whatFlavors(new int[]{2, 2, }, 4);
-            Sorting.Sorting.InsertionSort(new int[] {1, 5, 12, 2, 10, 4, 6, 8, 9});
+            Sorting.BubbleSort(new int[]{5, 8, 12, 10, 4, 6});
         }
     }
 }
