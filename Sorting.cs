@@ -54,7 +54,7 @@ public class Sorting {
     public static void InsertionSort(int[] arr)
         {
             Console.WriteLine("Insertion Sort");
-            
+
              for(int i = 1; i < arr.Length; i++)
              {
                  for(int j = 0; j < i ; j++)
@@ -77,6 +77,13 @@ public class Sorting {
              PrintSortedArray(arr);
         }
 
+    public static void MergeSort(int[] arr)
+    {
+        Console.WriteLine("Merge Sort");
+
+    }
+
+    #region Print sorted array
     private static void PrintSortedArray(int[] arr){
 
         for(int x = 0; x < arr.Length; x++)
@@ -84,4 +91,5 @@ public class Sorting {
             Console.WriteLine(arr[x]);
         }
     }
+    #endregion
 }

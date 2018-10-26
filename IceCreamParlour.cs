@@ -48,4 +48,35 @@ public class Solution {
             }
     }
 
+    public static void BinarySearch(int[] arr, int value)
+    {
+        int[] clonedArray = (int[] )arr.Clone();
+        Array.Sort(clonedArray);
+        int index1 = 0;
+        int index2 = 0;
+        for(int i = 0; i < clonedArray.Length; i++)
+        {
+            int complement = value - clonedArray[i];
+
+            int position = Array.BinarySearch(clonedArray, i + 1, clonedArray.Length - i - 1, complement);
+
+            if(position > 0)
+            {
+                //We found our elements . Now get their index from original array
+                index1 = Array.IndexOf(arr, clonedArray[i]);
+               for (int x = 0; x < arr.Length; x++)
+                {
+                    if (arr[x] == complement && x != index1)
+                    {
+                        index2 = x;
+                        break;
+                    }
+                }
+                break;
+            }
+        }
+        
+        Console.WriteLine((Math.Min(index1, index2) + 1).ToString() + " " + (Math.Max(index1, index2) + 1).ToString());
+    }
+
 }
