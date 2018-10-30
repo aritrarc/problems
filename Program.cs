@@ -13,7 +13,9 @@ namespace HelloWorld
             //SpecialPalindrome.SpecialPalindrome.FindSpecialPalindromeCount("nnonnpoo");
             //SpecialPalindrome.SpecialPalindrome.FindSpecialPalindromeCount("aaaa");
             //Solution.whatFlavors(new int[]{2, 2, }, 4);
-            Sorting.BubbleSort(new int[]{5, 8, 12, 10, 4, 6});
+            // Sorting.BubbleSort(new int[]{5, 8, 12, 10, 4, 6});
+            //Sorting.Merge_Sort(new int[]{5, 8, 12, 10, 4, 6},0,5);
+            MinimumTImeRequired.LCM(new long[]{4, 5, 6}, 12);
         }
     }
 }
