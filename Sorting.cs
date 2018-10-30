@@ -51,67 +51,31 @@ public class Sorting {
         PrintSortedArray(arr);
     }
 
-    public static void Merge_Sort(int[] arr,int low, int high)
-    {
-        int mid = (low + high)/2;
-
-        if(low < high)
+    public static void InsertionSort(int[] arr)
         {
-            Merge_Sort(arr, low, mid);
-            Merge_Sort(arr, mid + 1, high );
-            Merge(arr, low, mid, high);
-        }
-        PrintSortedArray(arr);
-    }
+            Console.WriteLine("Insertion Sort");
+            
+             for(int i = 1; i < arr.Length; i++)
+             {
+                 for(int j = 0; j < i ; j++)
+                 {
+                     if( arr[j] > arr[i])
+                     {
+                         int temp = arr[j];
+                         arr[j] = arr[i];
+                         int k = i;
+                        for( k = i; k  > j ; k--)
+                        {
+                            arr[k] = arr[k - 1];
+                        }
+                        arr[k + 1] = temp;
+                     }
 
-    private static void Merge(int[] arr, int low, int mid, int high)
-    {
-        int[] lowArray = new int[mid - low + 1];
-        int[] highArray = new int[high - low];
-        int n1 = mid - low + 1;
-        int n2 = high - low;
-        //Create two temp arrays for low and high parts
-        for(int i = 0; i < n1; i++)
-        {
-            lowArray[i] = arr[low + i];
-        }
+                 }
+             }
 
-        for(int p = 0; p < n2; p++)
-        {
-            highArray[p] = arr[mid + 1 + p ];
+             PrintSortedArray(arr);
         }
-
-        int x = 0;
-        int j = 0;
-        int k = low;
-        while( x < n1 && j < n2)
-        {
-            if(lowArray[x] < highArray[j])
-            {
-                arr[k] = lowArray[x];
-                x++;
-            }
-            else 
-            {
-                arr[k] = highArray[j];
-                j++;
-            }
-            k++;
-        }
-        
-        while ( j < n2)
-        {
-            arr[k] = highArray[j];
-            j++;k++;
-        }
-
-         while ( x < n1)
-        {
-            arr[k] = highArray[x];
-            x++;k++;
-        }
-
-    }
 
     private static void PrintSortedArray(int[] arr){
 
