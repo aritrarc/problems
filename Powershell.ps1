@@ -1,5 +1,8 @@
 #Powershell
 
-Get-AzureRmResourceGroup 'RsgDEVCEMetrica'
+#Define variables
+$centralUSResources = {}
 
-Get-AzureRmResource | Where Location -eq 'CentralUS'
+#Get-AzureRmResourceGroup 'RsgDEVCEMetrica'
+
+$centralUSResources = Get-AzureRmResource | Where-Object Location -eq 'CentralUS'
