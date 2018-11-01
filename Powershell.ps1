@@ -1,1 +1,3 @@
 #Powershell
+
+Get-AzureRmResourceGroup 'RsgSelCEMetrica'
