@@ -35,4 +35,6 @@ $VerbosePreference.value__
 Write-Verbose -Message "Searching the Application Event Log."
 Write-Host $cred
 
+#Get Public Ip
+Get-AzureRmPublicIpAddress -ResourceGroupName 'RsgDEVCEMetrica'
 
