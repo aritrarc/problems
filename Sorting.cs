@@ -15,6 +15,8 @@ using System;
 public class Sorting {
 
     // Various sorting algorithms
+
+    #region SelectionSort
     public static void SelectionSort(int[] arr) {
         Console.WriteLine("Selection Sort");
 
@@ -32,7 +34,9 @@ public class Sorting {
         }
         PrintSortedArray(arr);
     }
+    #endregion
 
+    #region BubbleSort
     public static void BubbleSort(int[] arr) {
         Console.WriteLine("Bubbble Sort");
 
@@ -50,7 +54,9 @@ public class Sorting {
         }
         PrintSortedArray(arr);
     }
+   #endregion
 
+    #region InsertionSort
     public static void InsertionSort(int[] arr)
         {
             Console.WriteLine("Insertion Sort");
@@ -76,12 +82,84 @@ public class Sorting {
 
              PrintSortedArray(arr);
         }
+    #endregion
+    
+    #region MergeSort
 
-    public static void MergeSort(int[] arr)
+    public static void MergeSortDriver(int[] arr, int low, int high)
     {
-        Console.WriteLine("Merge Sort");
+        MergeSort(arr, low, high);
+        PrintSortedArray(arr);
+    }
+    private static void MergeSort(int[] arr, int low, int high)
+    {
+        
+        if(low < high)
+        {
+            int mid = low + (high - low ) / 2;
+            MergeSort(arr, low, mid);
+            MergeSort(arr, mid+1, high);
+            Merge(arr, low, mid, high);
+        }
+    }
+
+    private static void Merge(int[] arr, int low, int mid, int high)
+    {
+        //Make two copy arrays for laft and right subarrays
+        int lsize = mid - low + 1;
+        int hsize = high - mid;
+
+        int[] lowarr = new int[lsize];
+        int[] higharr = new int[hsize];
+
+        //Copy elements to right and left subarray 
+        for(int m = 0; m <lsize; m++)
+        {
+            lowarr[m] = arr[low + m];
+        }
+
+        for(int x = 0; x <hsize; x++)
+        {
+            higharr[x] = arr[mid + 1 + x];
+        }
+
+
+        int i = 0;
+        int j = 0;
+        int k = low;
+
+        while ( i < lsize && j < hsize )
+        {
+            if(lowarr[i] <= higharr[j])
+            {
+                arr[k] = lowarr[i];
+                i++;
+            }
+            else
+            {
+                arr[k] = higharr[j];
+                j++;
+            }
+            k++;
+        }
+
+        while (i < lsize)
+        {
+            arr[k] = lowarr[i];
+            i++;
+            k++;
+        }
+
+        while (j < hsize)
+        {
+            arr[k] = higharr[j];
+            j++;
+            k++;
+        }
 
     }
+
+    #endregion
 
     #region Print sorted array
     private static void PrintSortedArray(int[] arr){
