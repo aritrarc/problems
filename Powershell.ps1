@@ -1,7 +1,12 @@
 #Powershell
 
 #PS version
-$PSVersionTable.PSVersion
+#$PSVersionTable.PSVersion
+#exit;
+
+#call ps
+#& .\Powershell Scripts\PS.ps1
+#exit;
 
 #Define variables
 $centralUSResources = {}
