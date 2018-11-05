@@ -12,8 +12,6 @@ namespace SpecialPalindrome
         // A special palindromic substring is any substring of a string which meets one of those criteria. Given a string, determine how many special palindromic substrings can be formed from it.
         public static void FindSpecialPalindromeCount(string str)
         {
-             int count = 0;
-             int start = 0;
              int x = str.Length;
              int result = palindromeRecurse(str);
              Console.WriteLine(result.ToString());
