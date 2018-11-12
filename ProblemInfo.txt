@@ -1,0 +1,12 @@
+
+1. MaximumToys
+
+Given a list of prices and an amount to spend, what is the maximum number of toys Mark can buy? 
+
+----------------------------------------------------------------------------------------------
+
+2. Sorting
+
+Bubble Sort, Selection Sort, Insertion Sort, Merge Sort
+
+----------------------------------------------------------------------------------------------
