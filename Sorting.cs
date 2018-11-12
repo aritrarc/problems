@@ -91,7 +91,7 @@ public class Sorting {
         MergeSort(arr, low, high);
         PrintSortedArray(arr);
     }
-    private static void MergeSort(int[] arr, int low, int high)
+    public static void MergeSort(int[] arr, int low, int high)
     {
         
         if(low < high)
