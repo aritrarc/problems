@@ -11,7 +11,7 @@ Bubble Sort, Selection Sort, Insertion Sort, Merge Sort
 
 ----------------------------------------------------------------------------------------------
 
-3. Fraudulent activity notification
+3. Fraudulent activity notification (Sorting)
 
 If the amount spent by a client on a particular day is greater than or equal to twice the client's median spending for a trailing
 number of days, they send the client a notification about potential fraud. The bank doesn't send the client any notifications
@@ -21,3 +21,20 @@ Given the number of trailing days d and a client's total daily expenditures for 
 find and print the number of times the client will receive a notification over all n days.
 
 -------------------------------------------------------------------------------------------------
+
+4. Minimum Absolute Difference ( Greedy)
+
+Given an array of integers, find and print the minimum absolute difference between any two elements in the array.
+
+---------------------------------------------------------------------------------------------------
+
+5. Luck Balance ( Greedy)
+
+ Lena believes in "saving luck", and wants to check her theory. Each contest is described by two integers, L[i] and T[i]: L[i]
+is the amount of luck associated with a contest. If Lena wins the contest, her luck balance will decrease by L[i]; 
+ if she loses it, her luck balance will increase by l[i].
+ T[i] denotes the contest's importance rating. It's equal to  if the contest is important, and it's equal to  if it's unimportant.
+If Lena loses no more than k important contests, what is the maximum amount of luck she can have after competing in 
+all the preliminary contests? This value may be negative.
+
+--------------------------------------------------------------------------------------------------
