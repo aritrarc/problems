@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace MinimumAbsoluteDifference
 {
+    //Given an array of integers, find and print the minimum absolute difference between any two elements in the array. 
     public class MinimumAbsoluteDifference
     {
         public static void GetminimumDifference(int[] arr)
