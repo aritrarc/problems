@@ -5,6 +5,10 @@ using System.Linq;
 
 namespace FraudulentActivityNotification
 {
+    // If the amount spent by a client on a particular day is greater than or equal to 2 X the client's median spending 
+    // for a trailing number of days, they send the client a notification about potential fraud. 
+    // The bank doesn't send the client any notifications until they have at least that trailing
+    //  number of prior days' transaction data.
     public class FraudulentActivityNotification
     {
         public static void GetNotification(int[] expenditure, int d)
