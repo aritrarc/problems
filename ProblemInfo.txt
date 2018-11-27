@@ -38,3 +38,12 @@ If Lena loses no more than k important contests, what is the maximum amount of l
 all the preliminary contests? This value may be negative.
 
 --------------------------------------------------------------------------------------------------
+
+6. GreedyFlorist (Greedy)
+
+To do this, he decides he'll multiply the price of each flower by the number of that customer's previously purchased flowers
+plus 1. The first flower will be original price, ( 0 + 1)*originalprice , the next will be ( 1 + 1)*originalprice and so on.
+Given the size of the group of friends, the number of flowers they want to purchase and the original prices of the flowers,
+determine the minimum cost to purchase all of the flowers.
+
+------------------------------------------------------------------------------------------------------
