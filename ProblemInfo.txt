@@ -47,3 +47,11 @@ Given the size of the group of friends, the number of flowers they want to purch
 determine the minimum cost to purchase all of the flowers.
 
 ------------------------------------------------------------------------------------------------------
+
+7. MaxMin (Greedy)
+
+You will be given a list of integers, arr, and a single integer k. You must create an array of length k from elements of arr
+such that its unfairness is minimized. Call that array . Unfairness of an array is calculated as difference
+between max and min of that array
+
+------------------------------------------------------------------------------------------------------

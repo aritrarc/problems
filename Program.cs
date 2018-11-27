@@ -20,7 +20,8 @@ namespace HelloWorld
             //FraudulentActivityNotification.FraudulentActivityNotification.GetNotification(new int[]{2, 7, 4, 2, 3, 6, 8, 4, 5}, 4);
             //FraudulentActivityNotification.FraudulentActivityNotification.GetNotification(new int[]{2, 3, 4, 2, 3, 6, 8, 4, 5}, 5);
             //MinimumAbsoluteDifference.MinimumAbsoluteDifference.GetminimumDifference(new int[] {-59, -36, -13, 1, -53, -92, -2, -96, -54, 75});
-            GreedyFlorist.GreedyFlorist.MInimizeCost(3, new int[] {2, 5, 6});
+            //GreedyFlorist.GreedyFlorist.MInimizeCost(3, new int[] {2, 5, 6});
+            MaxMin.MaxMin.MinimumUnfairness(3, new int[] {100, 200, 300, 350, 400, 401, 402});
         }
     }
 }
