@@ -55,3 +55,13 @@ such that its unfairness is minimized. Call that array . Unfairness of an array 
 between max and min of that array
 
 ------------------------------------------------------------------------------------------------------
+
+8. Balanced Brackets (Stacks)
+
+Two brackets are considered to be a matched pair if the an opening bracket (i.e., (, [, or {) occurs 
+to the left of a closing bracket (i.e., ), ], or }) of the exact same type.
+we say a sequence of brackets is balanced if the following conditions are met:
+1. It contains no unmatched brackets.
+2. The subset of brackets enclosed within the confines of a matched pair of brackets is also a matched pair of brackets.
+
+----------------------------------------------------------------------------------------------------------
