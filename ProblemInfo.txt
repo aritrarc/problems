@@ -11,7 +11,7 @@ Bubble Sort, Selection Sort, Insertion Sort, Merge Sort
 
 ----------------------------------------------------------------------------------------------
 
-3. Fraudulent activity notification (Sorting)
+3. Fraudulent activity notification (Sorting) ****
 
 If the amount spent by a client on a particular day is greater than or equal to twice the client's median spending for a trailing
 number of days, they send the client a notification about potential fraud. The bank doesn't send the client any notifications
@@ -63,5 +63,15 @@ to the left of a closing bracket (i.e., ), ], or }) of the exact same type.
 we say a sequence of brackets is balanced if the following conditions are met:
 1. It contains no unmatched brackets.
 2. The subset of brackets enclosed within the confines of a matched pair of brackets is also a matched pair of brackets.
+
+----------------------------------------------------------------------------------------------------------
+
+9. Queues : A Tale of Two Stacks (Stacks) ****
+
+In this challenge, you must first implement a queue using two stacks. Then process  queries, where each query is one of the following  types:
+1 x: Enqueue element  into the end of the queue.
+2: Dequeue the element at the front of the queue.
+3: Print the element at the front of the queue.
+For each query of type 3, return the value of the element at the front of the fifo queue on a new line.
 
 ----------------------------------------------------------------------------------------------------------
