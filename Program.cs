@@ -1,4 +1,5 @@
 ﻿using System;
+using nsDriverProgram;
 
 namespace HelloWorld
 {
@@ -24,7 +25,11 @@ namespace HelloWorld
             //MaxMin.MaxMin.MinimumUnfairness(3, new int[] {100, 200, 300, 350, 400, 401, 402});
             //BalancedBrackets.BalancedBrackets.IsBalanced("()()()[]");
             //Stack.Stack.ImplementStack();
-            ATaleOfTwoStacks.ATaleOfTwoStacks.DriverMethod();
+            //ATaleOfTwoStacks.ATaleOfTwoStacks.DriverMethod();
+            //CastleOnTheGrid.CastleOnTheGrid.MinimumMoves(new string[]{".X.",".X.","..."},0, 0, 0, 2);
+            //TripleSum.TripleSum.NumberOfTriplets(new int[]{1, 3, 5, 7}, new int[]{}, new int[]{});
+            DriverProgram program= new DriverProgram();
+            program.PerformActions(); 
         }
     }
 }
