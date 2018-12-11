@@ -22,6 +22,24 @@ namespace nsDriverProgram
                 Console.WriteLine("After adding at index"); 
                 singleLL.addAtIndex(55, 3);   
                 singleLL.display();
+                Console.WriteLine("After adding after value"); 
+                singleLL.addAfterValue(17, 55);   
+                singleLL.display();
+                Console.WriteLine("After adding before value"); 
+                singleLL.addBeforerValue(19, 10);   
+                singleLL.display();
+                Console.WriteLine("Delete from front"); 
+                singleLL.deleteFromFront();   
+                singleLL.display();
+                Console.WriteLine("Delete from End"); 
+                singleLL.deleteFromEnd();   
+                singleLL.display();
+                Console.WriteLine("Delete Specific value"); 
+                singleLL.deleteParticularValue(1); 
+                singleLL.display();
+                Console.WriteLine("Delete at index"); 
+                singleLL.deleteAtIndex(7); 
+                singleLL.display();
             } 
     }
 }

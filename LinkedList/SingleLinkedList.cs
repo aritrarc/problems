@@ -26,6 +26,7 @@ namespace SingleLinkedListDT
             start = null;
         }
 
+        #region InsertionOperations
         public void addToFront(int[] x)
         {
             int i =0;
@@ -91,6 +92,136 @@ namespace SingleLinkedListDT
             }
         }
 
+        public void addAfterValue(int x, int value)
+        {
+            Node p;
+            p =  start;
+            while(p != null)
+            {
+                if( p.data == value){
+                    break;
+                }
+                p = p.link;
+            }
+
+            if(p == null){
+                Console.WriteLine("Element {0} not found in LinkedList",value);
+            }
+            else{
+                Node temp =new Node(x);
+                temp.link = p.link;
+                p.link = temp;
+            }
+        }
+
+        public void addBeforerValue(int x, int value)
+        {
+            Node p;
+            p =  start;
+            while(p.link != null)
+            {
+                if( p.link.data == value){
+                    break;
+                }
+                p = p.link;
+            }
+
+            if(p.link == null){
+                Console.WriteLine("Element {0} not found in LinkedList",value);
+            }
+            else{
+                Node temp =new Node(x);
+                temp.link = p.link;
+                p.link = temp;
+            }
+        }
+        #endregion
+
+        #region DeletionOperations
+        public void deleteFromFront()
+        {
+            Node p;
+            p = start;
+
+            if(p == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            else{
+                start = p.link;
+            }
+        }
+
+        public void deleteFromEnd()
+        {
+            Node p;
+            p = start;
+
+            if(p == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            else{
+                while(p.link.link != null){
+                    p = p.link;
+                }
+                p.link = null;
+            }
+        }
+
+        public void deleteParticularValue(int x)
+        {
+            Node p;
+            p = start;
+
+            if(p == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            else{
+                while(p.link != null){
+                    if(p.link.data == x){
+                        break;
+                    }
+                    p = p.link;
+                }
+
+                if(p.link == null){
+                     Console.WriteLine("Element {0} not found in LinkedList",x);
+                }else {
+                    p.link = p.link.link;
+                }
+                
+            }
+        }
+
+        public void deleteAtIndex(int index)
+        {
+            Node p;
+            p = start;
+            int i = 1;
+            if(p == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            else if(index == 1)
+            {
+                start = p.link;
+            }
+            else{
+                for(i = 1; p.link!=null && i<index - 1; i++){
+                    p = p.link;
+                }  
+
+                if(p.link == null){
+                    Console.WriteLine("Index {0} doesn't exist in LinkedList",index);
+                } else {
+                    p.link = p.link.link;
+                }             
+            }
+        }
+
+        #endregion
         public void display()
         {
 
