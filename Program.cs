@@ -28,8 +28,9 @@ namespace HelloWorld
             //ATaleOfTwoStacks.ATaleOfTwoStacks.DriverMethod();
             //CastleOnTheGrid.CastleOnTheGrid.MinimumMoves(new string[]{".X.",".X.","..."},0, 0, 0, 2);
             //TripleSum.TripleSum.NumberOfTriplets(new int[]{1, 3, 5, 7}, new int[]{}, new int[]{});
-            DriverProgram program= new DriverProgram();
-            program.PerformActions(); 
+            // DriverProgram program= new DriverProgram();
+            // program.PerformActions(); 
+            nsSockMerchant.SockMerchant.GetPairs(10, new int[]{1, 1, 3, 1, 2, 1, 3, 3, 3, 3});
         }
     }
 }
