@@ -83,3 +83,12 @@ Given an array of integers representing the color of each sock, determine how ma
 there are.
 
 ---------------------------------------------------------------------------------------------------
+
+11. Warmup challenges : Counting Valleys
+
+Given Gary's sequence of up and down steps during his last hike, find and print the number of valleys he walked through.
+For example, if Gary's path is s = |DDUUUUDD|, he first enters a valley 2 units deep. 
+Then he climbs out an up onto a mountain 2 units high. Finally, he returns to sea level and ends his hike.
+Print a single integer that denotes the number of valleys Gary walked through during his hike.
+
+--------------------------------------------------------------------------------------------------
