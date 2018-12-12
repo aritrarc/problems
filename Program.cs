@@ -31,7 +31,8 @@ namespace HelloWorld
             // DriverProgram program= new DriverProgram();
             // program.PerformActions(); 
             //nsSockMerchant.SockMerchant.GetPairs(10, new int[]{1, 1, 3, 1, 2, 1, 3, 3, 3, 3});
-            nsSockMerchant.CountingValleys.GetNumberOfValleys(8, "UDDDUDUU");
+            //nsSockMerchant.CountingValleys.GetNumberOfValleys(8, "UDDDUDUU");
+            nsSockMerchant.RepeatedString.GetNumberOfA("jdiacikk",899491);
         }
     }
 }
