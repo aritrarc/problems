@@ -40,6 +40,12 @@ namespace nsDriverProgram
                 Console.WriteLine("Delete at index"); 
                 singleLL.deleteAtIndex(7); 
                 singleLL.display();
+                Console.WriteLine("Reverse LinkedList"); 
+                singleLL.reverseLinkedList();
+                singleLL.display();
+                Console.WriteLine("Bubble sort"); 
+                singleLL.bubbleSort();
+                singleLL.display();
             } 
     }
 }

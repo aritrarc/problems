@@ -222,6 +222,78 @@ namespace SingleLinkedListDT
         }
 
         #endregion
+       
+        #region Reversing
+        public void reverseLinkedList(){
+            Node p ;
+            p = start;
+            Node prev;
+            prev = null;
+            Node next;
+            next = null;
+
+            if(p == null){
+                Console.WriteLine("LinkedList is empty");
+            }else {
+                while(p != null){
+                    next = p.link;
+                    p.link = prev;
+                    prev = p;
+                    p = next;
+                }
+                start = prev;
+            }
+        }
+        #endregion
+
+        #region Sorting
+        public void bubbleSort()
+        {
+            Node p;
+            if(start == null){
+                Console.WriteLine("LinkedList doesn't contain any element");
+                return;
+            }
+            Node q;
+
+            for(p = start; p!= null; p = p.link )
+            {
+                for(q=p.link; q!= null; q = q.link)
+                {
+                    if(p.data > q.data){
+                        int temp = q.data;
+                        q.data = p.data;
+                        p.data = temp;
+                    }
+                }
+
+            }
+        }
+
+        public void bubbleSortLinkExchange()
+        {
+            Node p;
+            if(start == null){
+                Console.WriteLine("LinkedList doesn't contain any element");
+                return;
+            }
+            Node q;
+
+            for(p = start; p.link!= null; p = p.link )
+            {
+                for(q=p.link; q.link!= null; q = q.link)
+                {
+                    if(p.data > q.data){
+                        int temp = q.data;
+                        q.data = p.data;
+                        p.data = temp;
+                    }
+                }
+
+            }
+        }
+        #endregion
+
         public void display()
         {
 
