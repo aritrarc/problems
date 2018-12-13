@@ -32,7 +32,8 @@ namespace HelloWorld
             // program.PerformActions(); 
             //nsSockMerchant.SockMerchant.GetPairs(10, new int[]{1, 1, 3, 1, 2, 1, 3, 3, 3, 3});
             //nsSockMerchant.CountingValleys.GetNumberOfValleys(8, "UDDDUDUU");
-            nsSockMerchant.RepeatedString.GetNumberOfA("jdiacikk",899491);
+            //nsSockMerchant.RepeatedString.GetNumberOfA("jdiacikk",899491);
+            nsStacksQueues.EvaluatePostFixExpression.getPostfixExpression("512+4*+3-");
         }
     }
 }
