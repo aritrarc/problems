@@ -1,0 +1,43 @@
+//   static void Main(string[] args) {
+//         TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+//         int g = Convert.ToInt32(Console.ReadLine());
+
+//         for (int gItr = 0; gItr < g; gItr++) {
+
+//         
+//             int result = twoStacks(x, a, b);
+
+//             textWriter.WriteLine(result);
+//         }
+
+//         textWriter.Flush();
+//         textWriter.Close();
+//     }
+
+
+            // MyQueue<int> queue = new MyQueue<int>();
+            //Stack<int> stk = new Stack<int>();
+            // int n = Convert.ToInt32(Console.ReadLine());
+            // for (int i = 0; i < n; i++)
+            // {
+            //     string ops = Console.ReadLine();
+            //     int operation = Convert.ToInt32(ops.Substring(0,1));
+
+            //     if (operation == 1)
+            //     { 
+            //         // enqueue
+            //        //queue.enqueue(Convert.ToInt32(ops.Substring(2)));
+            //          stk.Push(Convert.ToInt32(ops.Substring(2)));
+            //     }
+            //     else if (operation == 2)
+            //     { // dequeue
+            //         //queue.dequeue();
+            //          stk.Pop();
+            //
+            //     }
+            //     else if (operation == 3)
+            //     { // print/peek
+            //        Console.WriteLine(stk.peek());
+            //     }
+            // }
