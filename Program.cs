@@ -34,7 +34,10 @@ namespace HelloWorld
             //nsSockMerchant.CountingValleys.GetNumberOfValleys(8, "UDDDUDUU");
             //nsSockMerchant.RepeatedString.GetNumberOfA("jdiacikk",899491);
             //nsStacksQueues.EvaluatePostFixExpression.getPostfixExpression("512+4*+3-");
-            nsStacksQueues.EqualStacks.minimumEqualStack(new int[]{3, 2, 1, 1, 1}, new int[]{4, 3, 2}, new int[]{1, 1, 4, 1});
+            //nsStacksQueues.EqualStacks.minimumEqualStack(new int[]{3, 2, 1, 1, 1}, new int[]{4, 3, 2}, new int[]{1, 1, 4, 1});
+            // nsStacksQueues.GameOfTwoStacks.MaxScore(12, new int[]{1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0},
+            //  new int[]{0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1});
+            //nsStacksQueues.MaximumElement.GetMaxElement();
         }
     }
 }
