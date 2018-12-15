@@ -68,6 +68,56 @@ namespace DoubleLinkedListDT
             }
         }
 
+        public void InsertAfterNode(int val, int x){
+            Node p;
+            p = start;
+
+            while(p.next != null)
+            {
+                if(p.data == val){
+                    break;
+                }
+                p = p.next;
+            }
+
+            if(p.data != val){
+                Console.WriteLine("Element {0} is not present in the LinkedList",val);
+            }
+            else {
+                Node temp = new Node(x);
+                p.next.prev = temp;
+                temp.next = p.next;
+                temp.prev = p;
+                p.next = temp;
+
+            }
+        }
+
+        public void InsertBeforeNode(int val, int x)
+        {
+            Node p;
+            p = start;
+
+           while(p.next != null)
+            {
+                if(p.data == val){
+                    break;
+                }
+                p = p.next;
+            }
+
+            if(p.data != val){
+                Console.WriteLine("Element {0} is not present in the LinkedList",val);
+            }
+            else {
+                Node temp = new Node(x);
+                temp.next = p;
+                p.prev.next = temp;
+                temp.prev = p.prev;
+                p.prev = temp;
+            }
+        }
+
         public void DisplayDoubleLinkedList(){
             Node p;
             p = start;

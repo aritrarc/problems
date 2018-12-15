@@ -59,6 +59,13 @@ namespace nsDriverProgram
                 doubleLL.InsertAtEnd(77);
                 Console.WriteLine("After adding to end"); 
                 doubleLL.DisplayDoubleLinkedList();
+                doubleLL.InsertAfterNode(2, 99);
+                Console.WriteLine("Inserting after node"); 
+                doubleLL.DisplayDoubleLinkedList();
+                doubleLL.InsertBeforeNode(4, 13);
+                Console.WriteLine("Inserting before node"); 
+                doubleLL.DisplayDoubleLinkedList();
+
             }
     }
 }
