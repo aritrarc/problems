@@ -3,16 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using SingleLinkedListDT;
+using DoubleLinkedListDT;
 
 namespace nsDriverProgram
 {
     public class DriverProgram {
 
             SingleLinkedList singleLL ;
+            DoubleLinkedList doubleLL; 
             public DriverProgram(){
                 singleLL = new SingleLinkedList();
+                doubleLL = new DoubleLinkedList();
             }
-            public void PerformActions(){  
+            public void PerformActionsSingleLinkedList(){  
                 singleLL.addToFront(new int[] {1, 3, 2, 4, 5});   
                 Console.WriteLine("After adding to front"); 
                 singleLL.display();
@@ -47,5 +50,12 @@ namespace nsDriverProgram
                 singleLL.bubbleSort();
                 singleLL.display();
             } 
+
+            public void PerformActionsDoubleLinkedList()
+            {
+                doubleLL.InsertAtFront(new int[] {1, 3, 2, 4, 5});   
+                Console.WriteLine("After adding to front"); 
+                doubleLL.DisplayDoubleLinkedList();
+            }
     }
 }
