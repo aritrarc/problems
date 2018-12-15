@@ -56,6 +56,9 @@ namespace nsDriverProgram
                 doubleLL.InsertAtFront(new int[] {1, 3, 2, 4, 5});   
                 Console.WriteLine("After adding to front"); 
                 doubleLL.DisplayDoubleLinkedList();
+                doubleLL.InsertAtEnd(77);
+                Console.WriteLine("After adding to end"); 
+                doubleLL.DisplayDoubleLinkedList();
             }
     }
 }

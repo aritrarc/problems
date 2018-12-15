@@ -48,10 +48,30 @@ namespace DoubleLinkedListDT
             
         }
 
+        public void InsertAtEnd(int x)
+        {
+            Node p;
+            p = start;
+            Node temp = new Node(x);
+
+            if(p == null){
+                start = temp;
+            }
+            else{
+                while(p.next != null){
+                    p = p.next;
+                }
+
+                p.next = temp;
+                temp.prev = p;
+                temp.next = null;
+            }
+        }
+
         public void DisplayDoubleLinkedList(){
             Node p;
             p = start;
-
+            
             if(start == null){
                 Console.WriteLine("There are no elements in the LinkedList");
             }
@@ -60,6 +80,7 @@ namespace DoubleLinkedListDT
                     Console.Write(p.data + " ");
                     p = p.next;
                 }
+                Console.WriteLine();
             }
         }
     }
