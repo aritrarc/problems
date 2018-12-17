@@ -130,3 +130,10 @@ You have an empty sequence, and you will be given N queries. Each query is one o
 3    -Print the maximum element in the stack.
 
 ----------------------------------------------------------------------------------------------------------
+
+16. Strings: SuperReducedString (E)
+
+Steve’s task is to delete as many characters as possible using this method( delete adjacent characters) and print the resulting string. 
+If the final string is empty, print Empty String
+
+----------------------------------------------------------------------------------------------------------

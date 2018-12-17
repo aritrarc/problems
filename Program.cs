@@ -1,5 +1,6 @@
 ﻿using System;
 using nsDriverProgram;
+using nsStrings;
 
 namespace HelloWorld
 {
@@ -30,7 +31,7 @@ namespace HelloWorld
             //TripleSum.TripleSum.NumberOfTriplets(new int[]{1, 3, 5, 7}, new int[]{}, new int[]{});
             DriverProgram program= new DriverProgram();
             // program.PerformActionsSingleLinkedList(); 
-            program.PerformActionsDoubleLinkedList();
+            //program.PerformActionsDoubleLinkedList();
             //nsSockMerchant.SockMerchant.GetPairs(10, new int[]{1, 1, 3, 1, 2, 1, 3, 3, 3, 3});
             //nsSockMerchant.CountingValleys.GetNumberOfValleys(8, "UDDDUDUU");
             //nsSockMerchant.RepeatedString.GetNumberOfA("jdiacikk",899491);
@@ -39,6 +40,7 @@ namespace HelloWorld
             // nsStacksQueues.GameOfTwoStacks.MaxScore(12, new int[]{1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0},
             //  new int[]{0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1});
             //nsStacksQueues.MaximumElement.GetMaxElement();
+            SuperReducedString.GetSuperReducedString("baab");
         }
     }
 }
