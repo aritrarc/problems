@@ -137,3 +137,11 @@ Steve’s task is to delete as many characters as possible using this method( de
 If the final string is empty, print Empty String
 
 ----------------------------------------------------------------------------------------------------------
+
+17. Lily's Homework (M) **
+
+Consider an array of  distinct integers. George can swap any two elements of the array any number of times. 
+An array is beautiful if the sum of |[arr[i] - arr[i-1]]| among 0 < i < n is minimal.
+Given the array,determine and return the minimum number of swaps that should be performed in order to make the array beautiful.
+
+-------------------------------------------------------------------------------------------------------

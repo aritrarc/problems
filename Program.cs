@@ -1,6 +1,7 @@
 ﻿using System;
 using nsDriverProgram;
 using nsStrings;
+using nsSorting;
 
 namespace HelloWorld
 {
@@ -40,7 +41,8 @@ namespace HelloWorld
             // nsStacksQueues.GameOfTwoStacks.MaxScore(12, new int[]{1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0},
             //  new int[]{0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1});
             //nsStacksQueues.MaximumElement.GetMaxElement();
-            SuperReducedString.GetSuperReducedString("baab");
+            //SuperReducedString.GetSuperReducedString("baab");
+            MinSwaps.GetMinimumSwaps(new int[]{3, 4, 2, 5, 1});
         }
     }
 }
