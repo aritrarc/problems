@@ -65,7 +65,18 @@ namespace nsDriverProgram
                 doubleLL.InsertBeforeNode(4, 13);
                 Console.WriteLine("Inserting before node"); 
                 doubleLL.DisplayDoubleLinkedList();
-
+                Console.WriteLine("Delete from Front"); 
+                doubleLL.DeleteFromFront();
+                doubleLL.DisplayDoubleLinkedList();
+                Console.WriteLine("Delete from End"); 
+                doubleLL.DeleteFromEnd();
+                doubleLL.DisplayDoubleLinkedList();
+                Console.WriteLine("Delete specific node"); 
+                doubleLL.DeleteSpecificNode(66);
+                doubleLL.DisplayDoubleLinkedList();
+                Console.WriteLine("Reversed"); 
+                doubleLL.Reverse();
+                doubleLL.DisplayDoubleLinkedList();
             }
     }
 }

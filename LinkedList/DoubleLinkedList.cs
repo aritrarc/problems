@@ -28,6 +28,7 @@ namespace DoubleLinkedListDT
             start = null;
         }
 
+        #region Insertion
         public void InsertAtFront(int[] x){
             Node p;
             p = start;
@@ -117,7 +118,89 @@ namespace DoubleLinkedListDT
                 p.prev = temp;
             }
         }
+        #endregion
+       
+        #region Delete
+       public void DeleteFromFront()
+       {
+           Node p;
+           p = start;
+            if(start == null){
+                Console.WriteLine("LinkedList is empty");
+            }else {
+                p.next.prev = null;
+                start = p.next;
+            }
+       }
 
+       public void DeleteFromEnd()
+       {
+           Node p;
+           p = start;
+
+           if(p == null){
+               Console.WriteLine("LinkedList is empty");
+           }else {
+               while(p.next != null){
+                   p = p.next;
+               }
+               p.prev.next = null;
+           }
+       }
+
+       public void DeleteSpecificNode(int x)
+       {
+            Node p;
+           p = start;
+
+           if(p == null){
+               Console.WriteLine("LinkedList is empty");
+           }else {
+               while(p != null){
+                   if(p.data == x){
+                       break;
+                   }
+                   p = p.next;
+               }
+               
+               if(p == null){
+                   Console.WriteLine("Element not found");
+               }else {
+                   p.prev.next = p.next;
+                   if(p.next != null){
+                       p.next.prev = p.prev;
+                   }
+                   
+               }
+           }
+       }
+    #endregion
+
+        #region Reverse
+        public void Reverse()
+        {
+            Node p;
+            p = start; 
+            Node q;
+            q = start;
+            
+            if(p != null && p.next != null){
+         
+                while(p.next != null){
+                    q = q.next;
+                    p.next = p.prev;
+                    p.prev = q;
+                    p = p.prev;
+                }
+                p.next = p.prev;
+                p.prev = null;
+                start = p;
+            }
+            
+        }
+
+       #endregion
+       
         public void DisplayDoubleLinkedList(){
             Node p;
             p = start;
