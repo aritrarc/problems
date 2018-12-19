@@ -118,6 +118,49 @@ namespace DoubleLinkedListDT
                 p.prev = temp;
             }
         }
+
+        public void InsertNodeInSortedList(int data)
+        {
+            Node p;
+            p = start;
+            
+            if( p == null)
+            {
+                Node temp = new Node(data);
+                start = temp;
+                return;
+            }
+            else if( data < p.data)
+            {
+                Node temp = new Node(data);
+                temp.next = start;
+                start = temp;
+                return;
+            }
+
+            while(p != null)
+            {
+                if(data <= p.data){
+                    Node temp = new Node(data);
+                    p.prev.next = temp;
+                    temp.prev = p.prev;
+                    temp.next = p;
+                    p.prev = temp;
+                    return;
+                }
+                if(p.next == null){
+                    break;
+                }
+                p = p.next;
+            }
+
+            if(p.next == null)
+            {
+                Node temp = new Node(data);
+                p.next = temp;
+                temp.prev = p;
+            }
+        }
         #endregion
        
         #region Delete
