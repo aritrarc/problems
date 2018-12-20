@@ -145,3 +145,12 @@ An array is beautiful if the sum of |[arr[i] - arr[i-1]]| among 0 < i < n is min
 Given the array,determine and return the minimum number of swaps that should be performed in order to make the array beautiful.
 
 -------------------------------------------------------------------------------------------------------
+
+18. Frequency Queries (M) **
+
+You are given q queries. Each query is of the form two integers described below: 
+x : Insert x in your data structure. 
+y:  Delete one occurence of y from your data structure, if present. 
+z:  Check if any integer is present whose frequency is exactly z. If yes, print 1 else 0.
+
+-------------------------------------------------------------------------------------------------------

@@ -2,6 +2,7 @@
 using nsDriverProgram;
 using nsStrings;
 using nsSorting;
+using nsDictionariesnHashmaps;
 
 namespace HelloWorld
 {
@@ -32,7 +33,7 @@ namespace HelloWorld
             //TripleSum.TripleSum.NumberOfTriplets(new int[]{1, 3, 5, 7}, new int[]{}, new int[]{});
             DriverProgram program= new DriverProgram();
             // program.PerformActionsSingleLinkedList(); 
-            program.PerformActionsDoubleLinkedList();
+            //program.PerformActionsDoubleLinkedList();
             //nsSockMerchant.SockMerchant.GetPairs(10, new int[]{1, 1, 3, 1, 2, 1, 3, 3, 3, 3});
             //nsSockMerchant.CountingValleys.GetNumberOfValleys(8, "UDDDUDUU");
             //nsSockMerchant.RepeatedString.GetNumberOfA("jdiacikk",899491);
@@ -43,6 +44,8 @@ namespace HelloWorld
             //nsStacksQueues.MaximumElement.GetMaxElement();
             //SuperReducedString.GetSuperReducedString("baab");
             //MinSwaps.GetMinimumSwaps(new int[]{3, 4, 2, 5, 1});
+            //CountTriplets.NumberOfTriplets(new System.Collections.Generic.List<long>{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,},1);
+            FrequencyQueries.CreateInput();
         }
     }
 }
