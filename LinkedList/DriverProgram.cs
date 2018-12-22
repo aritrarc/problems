@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using SingleLinkedListDT;
 using DoubleLinkedListDT;
+using CircularLinkedListDT;
 
 namespace nsDriverProgram
 {
@@ -11,9 +12,13 @@ namespace nsDriverProgram
 
             SingleLinkedList singleLL ;
             DoubleLinkedList doubleLL; 
+
+            CircularLinkedList circularLL;
+
             public DriverProgram(){
                 singleLL = new SingleLinkedList();
                 doubleLL = new DoubleLinkedList();
+                circularLL = new CircularLinkedList();
             }
             public void PerformActionsSingleLinkedList(){  
                 singleLL.addToFront(new int[] {1, 3, 2, 4, 5});   
@@ -77,6 +82,20 @@ namespace nsDriverProgram
                 Console.WriteLine("Reversed"); 
                 doubleLL.Reverse();
                 doubleLL.DisplayDoubleLinkedList();
+            }
+
+            public void PerformActionsCircularLinkedList()
+            {
+                circularLL.display();
+                circularLL.InsertFront(new int[]{6, 5, 4, 3, 2, 1});
+                Console.WriteLine("After Inserting at front:");
+                circularLL.display();
+                circularLL.InsertAtEnd(new int[]{7, 8, 9});
+                Console.WriteLine("After Inserting at end:");
+                circularLL.display();
+                circularLL.InsetAfterNode(9, 21);
+                Console.WriteLine("After Inserting after node:");
+                circularLL.display();
             }
     }
 }

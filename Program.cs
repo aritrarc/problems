@@ -45,7 +45,8 @@ namespace HelloWorld
             //SuperReducedString.GetSuperReducedString("baab");
             //MinSwaps.GetMinimumSwaps(new int[]{3, 4, 2, 5, 1});
             //CountTriplets.NumberOfTriplets(new System.Collections.Generic.List<long>{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,},1);
-            FrequencyQueries.CreateInput();
+            //FrequencyQueries.CreateInput();
+            program.PerformActionsCircularLinkedList();
         }
     }
 }
