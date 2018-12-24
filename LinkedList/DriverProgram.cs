@@ -97,5 +97,11 @@ namespace nsDriverProgram
                 Console.WriteLine("After Inserting after node:");
                 circularLL.display();
             }
+
+            public void FindMergePoint()
+            {
+                SingleLinkedList ls = new SingleLinkedList();
+                ls.MergePoint();
+            }
     }
 }

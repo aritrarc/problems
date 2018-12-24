@@ -46,7 +46,8 @@ namespace HelloWorld
             //MinSwaps.GetMinimumSwaps(new int[]{3, 4, 2, 5, 1});
             //CountTriplets.NumberOfTriplets(new System.Collections.Generic.List<long>{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,},1);
             //FrequencyQueries.CreateInput();
-            program.PerformActionsCircularLinkedList();
+            //program.PerformActionsCircularLinkedList();
+            program.FindMergePoint();
         }
     }
 }

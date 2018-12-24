@@ -294,6 +294,41 @@ namespace SingleLinkedListDT
         }
         #endregion
 
+        #region MergePoint
+        public void MergePoint(){
+            SingleLinkedList list1 = new SingleLinkedList();
+            list1.addToFront(new int[] {6, 5, 3, 2, 1});
+            SingleLinkedList list2 = new SingleLinkedList();
+            list1.addToFront(new int[] {6, 5, 3, 9, 7, 1});
+
+            Node p1;
+            p1 = list1.start;
+
+            Node p2;
+            p2 = list2.start;
+
+            while( p1 != p2)
+            {
+                if(p1.link == null)
+                {
+                    p1 = list2.start;
+                }else {
+                    p1 = p1.link;
+                }
+
+                if(p2.link == null)
+                {
+                    p2 = list1.start;
+                }else {
+                    p2 = p2.link;
+                }
+            }
+
+            Console.WriteLine(p2.data);
+        }
+
+        #endregion
+
         public void display()
         {
 
