@@ -113,6 +113,80 @@ namespace CircularLinkedListDT
 
         #endregion
 
+        #region DeleteOperations
+        public void DeleteFromStart()
+        {
+            if(last == null){
+                Console.WriteLine("List is Empty");
+                return;
+            }
+
+            if(last.link == last){ //There is a single node
+                last = null;
+                return;
+            }
+
+            last.link = last.link.link;
+
+        }
+
+        public void DeleteFromEnd()
+        {
+            if(last == null){
+                Console.WriteLine("List is Empty");
+                return;
+            }
+
+            if(last.link == last){ //There is a single node
+                last = null;
+                return;
+            }
+
+            Node p;
+            p = last.link;
+
+            while(p.link != last){
+                p = p.link;
+            }
+            p.link = last.link;
+            last = p;
+        }
+
+        public void DeleteSpecificNode(int x)
+        {
+             if(last == null){
+                Console.WriteLine("List is Empty");
+                return;
+            }
+
+            if(last.link == last && last.data == x){ //There is a single node
+                last = null;
+                return;
+            }
+
+            Node p;
+            p = last.link;
+
+            do{
+                if(p.link.data == x){
+                    break;
+                }
+                p = p.link;
+            }while(p != last.link);
+
+            if(p.link.data == x){
+                if(p.link == last){  //If its the last node
+                    p.link = last.link;
+                    last = p;
+                }else{
+                    p.link = p.link.link;
+                }
+            }else{
+                Console.WriteLine("Element not found");
+            }
+        }
+        #endregion
+
         public void display()
         {
             if(last == null)

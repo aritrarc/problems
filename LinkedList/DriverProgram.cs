@@ -96,6 +96,15 @@ namespace nsDriverProgram
                 circularLL.InsetAfterNode(9, 21);
                 Console.WriteLine("After Inserting after node:");
                 circularLL.display();
+                Console.WriteLine("After Deleting first node:");
+                circularLL.DeleteFromStart();
+                circularLL.display();
+                Console.WriteLine("After Deleting last node:");
+                circularLL.DeleteFromEnd();
+                circularLL.display();
+                Console.WriteLine("Delete specific node:");
+                circularLL.DeleteSpecificNode(9);
+                circularLL.display();
             }
 
             public void FindMergePoint()
