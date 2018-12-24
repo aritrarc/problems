@@ -154,3 +154,16 @@ y:  Delete one occurence of y from your data structure, if present.
 z:  Check if any integer is present whose frequency is exactly z. If yes, print 1 else 0.
 
 -------------------------------------------------------------------------------------------------------
+
+19. SparseArrays (M)
+
+There is a collection of input strings and a collection of query strings. 
+For each query string, determine how many times it occurs in the list of input strings.
+
+-------------------------------------------------------------------------------------------------------
+
+20. Find MergePoint in two Single Linked Lists (E) *
+
+Given two Single Linked Lists , Find the point where the two lists merge.
+
+--------------------------------------------------------------------------------------------------------
