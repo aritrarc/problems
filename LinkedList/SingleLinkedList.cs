@@ -326,8 +326,27 @@ namespace SingleLinkedListDT
 
             Console.WriteLine(p2.data);
         }
-
         #endregion
+
+
+        public bool hasCycle()
+        {
+            Node t;
+            t = start;
+            Node h;
+            h = start;
+
+            while( h != null && h.link != null)
+            {
+                t = t.link;
+                h = h.link.link;
+                if(t == h){
+                    return true;
+                }
+
+            }
+            return false;
+        }
 
         public void display()
         {
