@@ -41,3 +41,11 @@
             //        Console.WriteLine(stk.peek());
             //     }
             // }
+
+
+
+
+            --------------------IMP--------------------------------------------
+
+               string lines = File.ReadAllLines("C:\\Users\\roycha\\Desktop\\input.txt")[0];
+            int[] arr = Array.ConvertAll(lines.Split(' '), arrTemp => Convert.ToInt32(arrTemp)); 

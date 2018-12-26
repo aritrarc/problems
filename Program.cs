@@ -1,8 +1,10 @@
 ﻿using System;
+using System.IO;
 using nsDriverProgram;
 using nsStrings;
 using nsSorting;
 using nsDictionariesnHashmaps;
+using nsGreedy;
 
 namespace HelloWorld
 {
@@ -48,7 +50,10 @@ namespace HelloWorld
             //FrequencyQueries.CreateInput();
             //program.PerformActionsCircularLinkedList();
             //program.FindMergePoint();
-            HighestValuePalindrome.GetHighestpalindromeValue("3943", 4, 1);
+            //HighestValuePalindrome.GetHighestpalindromeValue("3943", 4, 1);
+            string lines = File.ReadAllLines("C:\\Users\\roycha\\Desktop\\input.txt")[0];
+            int[] arr = Array.ConvertAll(lines.Split(' '), arrTemp => Convert.ToInt32(arrTemp)); 
+            GoodLandElectricity.pylons(20, arr);
         }
     }
 }
