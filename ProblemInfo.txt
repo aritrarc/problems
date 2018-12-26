@@ -138,7 +138,7 @@ If the final string is empty, print Empty String
 
 ----------------------------------------------------------------------------------------------------------
 
-17. Lily's Homework (M) **
+17. Sorting: Lily's Homework (M) **
 
 Consider an array of  distinct integers. George can swap any two elements of the array any number of times. 
 An array is beautiful if the sum of |[arr[i] - arr[i-1]]| among 0 < i < n is minimal.
@@ -146,7 +146,7 @@ Given the array,determine and return the minimum number of swaps that should be 
 
 -------------------------------------------------------------------------------------------------------
 
-18. Frequency Queries (M) **
+18. Dictionaries & HashMaps : Frequency Queries (M) **
 
 You are given q queries. Each query is of the form two integers described below: 
 x : Insert x in your data structure. 
@@ -155,15 +155,23 @@ z:  Check if any integer is present whose frequency is exactly z. If yes, print 
 
 -------------------------------------------------------------------------------------------------------
 
-19. SparseArrays (M)
+19. Arrays : SparseArrays (M)
 
 There is a collection of input strings and a collection of query strings. 
 For each query string, determine how many times it occurs in the list of input strings.
 
 -------------------------------------------------------------------------------------------------------
 
-20. Find MergePoint in two Single Linked Lists (E) *
+20. LinkedLists: Find MergePoint in two Single Linked Lists (E) *
 
 Given two Single Linked Lists , Find the point where the two lists merge.
 
 --------------------------------------------------------------------------------------------------------
+
+21. Strings: HighestValuePalindorme (M) **
+
+You will be given a string representation of a number and a maximum number of changes you can make. 
+Alter the string, one digit at a time, to create the string representation of the largest number possible given
+ the limit to the number of changes.
+
+ -----------------------------------------------------------------------------------------------------
