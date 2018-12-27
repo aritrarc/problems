@@ -5,6 +5,7 @@ using nsStrings;
 using nsSorting;
 using nsDictionariesnHashmaps;
 using nsGreedy;
+using nsArrays;
 
 namespace HelloWorld
 {
@@ -51,9 +52,11 @@ namespace HelloWorld
             //program.PerformActionsCircularLinkedList();
             //program.FindMergePoint();
             //HighestValuePalindrome.GetHighestpalindromeValue("3943", 4, 1);
-            string lines = File.ReadAllLines("C:\\Users\\roycha\\Desktop\\input.txt")[0];
-            int[] arr = Array.ConvertAll(lines.Split(' '), arrTemp => Convert.ToInt32(arrTemp)); 
-            GoodLandElectricity.pylons(20, arr);
+            // string lines = File.ReadAllLines("C:\\Users\\roycha\\Desktop\\input.txt")[0];
+            // int[] arr = Array.ConvertAll(lines.Split(' '), arrTemp => Convert.ToInt32(arrTemp)); 
+            // GoodLandElectricity.pylons(20, arr);
+            //BearNSteadyGene.Steadygene("GAAATAAA");
+            LeftRotation.RotateLeft(new int[]{1, 2, 3, 4, 5}, 3);
         }
     }
 }
