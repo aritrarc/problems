@@ -58,7 +58,8 @@ namespace HelloWorld
             // GoodLandElectricity.pylons(20, arr);
             //BearNSteadyGene.Steadygene("GAAATAAA");
             //LeftRotation.RotateLeft(new int[]{1, 2, 3, 4, 5}, 3);
-            nsRecursion.FibonacciNumbers.GetFibonacciNumbers(6);
+            //nsRecursion.FibonacciNumbers.GetFibonacciNumbers(6);
+            nsRecursion.DavisStaircase.GetstepPerms(7);
         }
     }
 }
