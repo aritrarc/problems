@@ -42,7 +42,7 @@ namespace HelloWorld
             //nsSockMerchant.RepeatedString.GetNumberOfA("jdiacikk",899491);
             //nsStacksQueues.EvaluatePostFixExpression.getPostfixExpression("512+4*+3-");
             //nsStacksQueues.EqualStacks.minimumEqualStack(new int[]{3, 2, 1, 1, 1}, new int[]{4, 3, 2}, new int[]{1, 1, 4, 1});
-            // nsStacksQueues.GameOfTwoStacks.MaxScore(12, new int[]{1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0},
+            nsStacksQueues.GameOfTwoStacks.MaxScore(10, new int[]{4, 2, 4, 6, 1}, new int[]{2, 1, 8, 5});
             //  new int[]{0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1});
             //nsStacksQueues.MaximumElement.GetMaxElement();
             //SuperReducedString.GetSuperReducedString("baab");
@@ -56,7 +56,7 @@ namespace HelloWorld
             // int[] arr = Array.ConvertAll(lines.Split(' '), arrTemp => Convert.ToInt32(arrTemp)); 
             // GoodLandElectricity.pylons(20, arr);
             //BearNSteadyGene.Steadygene("GAAATAAA");
-            LeftRotation.RotateLeft(new int[]{1, 2, 3, 4, 5}, 3);
+            //LeftRotation.RotateLeft(new int[]{1, 2, 3, 4, 5}, 3);
         }
     }
 }
