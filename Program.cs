@@ -6,7 +6,7 @@ using nsSorting;
 using nsDictionariesnHashmaps;
 using nsGreedy;
 using nsArrays;
-using nsRecursion;
+using nsRecursionNBactracking;
 
 namespace HelloWorld
 {
@@ -59,7 +59,10 @@ namespace HelloWorld
             //BearNSteadyGene.Steadygene("GAAATAAA");
             //LeftRotation.RotateLeft(new int[]{1, 2, 3, 4, 5}, 3);
             //nsRecursion.FibonacciNumbers.GetFibonacciNumbers(6);
-            nsRecursion.DavisStaircase.GetstepPerms(7);
+            //nsRecursionNBactracking.DavisStaircase.GetstepPerms(7);
+            nsRecursionNBactracking.NQueens obj1 = new NQueens();
+            obj1.CheckNQueens();
+            
         }
     }
 }

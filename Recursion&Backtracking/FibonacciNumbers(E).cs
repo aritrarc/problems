@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace nsRecursion
+namespace nsRecursionNBactracking
 {
     //Find the nth Fibonnaci Number
     public class FibonacciNumbers
