@@ -60,8 +60,9 @@ namespace HelloWorld
             //LeftRotation.RotateLeft(new int[]{1, 2, 3, 4, 5}, 3);
             //nsRecursion.FibonacciNumbers.GetFibonacciNumbers(6);
             //nsRecursionNBactracking.DavisStaircase.GetstepPerms(7);
-            nsRecursionNBactracking.NQueens obj1 = new NQueens();
-            obj1.CheckNQueens();
+            nsRecursionNBactracking.RatInaMaze obj1 = new RatInaMaze();
+            //obj1.CheckNQueens();
+            obj1.CheckMaze();
             
         }
     }
