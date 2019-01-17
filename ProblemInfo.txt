@@ -202,3 +202,12 @@ Davis has a number of staircases in his house and he likes to climb each stairca
 Being a very precocious child, he wonders how many ways there are to reach the top of the staircase.
 
 -----------------------------------------------------------------------------------------------------
+
+25. Recursion: Recursive Digit Sum (M)
+
+Given an integer, we need to find the super digit of the integer.
+If x has only  digit, then its super digit is x. Otherwise, the super digit of x is equal to the super digit of 
+the sum of the digits of x. You are given two numbers n and k. The number p is created by concatenating the string n k times. 
+Find the superdigit of this number p.
+
+--------------------------------------------------------------------------------------------------
