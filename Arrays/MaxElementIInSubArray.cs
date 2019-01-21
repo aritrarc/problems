@@ -8,8 +8,7 @@ namespace nsArrays
 {
     public static class MaxElementInSubArray
     {
-            //Given an array of n integers and a number d, , perform d left rotations on the array.
-            // Then print the updated array as a single line of space-separated integers.
+            //Given an array of n integers and a number k, Print the maximum of all contiguous subarrays of size k.
             public static void GetMaxElementInSubArray(int[] arr, int k)
             {
                 List<int> results = new List<int>();

@@ -64,7 +64,11 @@ namespace HelloWorld
             //obj1.CheckNQueens();
             //obj1.CheckMaze();
             // nsRecursionNBactracking.SuperDigit.superDigit("3546630947312051453014172159647935984478824945973141333062252613718025688716704470547449723886626736",100000);
-            
+            // nsRecursionNBactracking.CrossWordPuzzle obj1 = new CrossWordPuzzle();
+            // obj1.CheckMaze();
+            //CrossWordPuzzle.CheckMaze();
+            //PowerSum.GetPowerSum();
+            nsArrays.MinimumWindowSumInArray.GetminimumWindowSum(new int[]{2, 4, 6, 1, 7, 2, 1, 5, 6, 8, 3}, 11);
         }
     }
 }
