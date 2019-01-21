@@ -211,3 +211,11 @@ the sum of the digits of x. You are given two numbers n and k. The number p is c
 Find the superdigit of this number p.
 
 --------------------------------------------------------------------------------------------------
+
+26. Strings: Bear and Steady Gene (M) [Caterpillar technique] **
+
+A gene is represented as a string of length n (where  is divisible by 4 ), composed of the letters A, C, T, and G. 
+It is considered to be steady if each of the four letters occurs exactly n/4 times. Return an integer that represents 
+the length of the smallest substring to replace to make the gene steady.
+
+-----------------------------------------------------------------------------------------------

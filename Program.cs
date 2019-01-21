@@ -56,7 +56,7 @@ namespace HelloWorld
             // string lines = File.ReadAllLines("C:\\Users\\roycha\\Desktop\\input.txt")[0];
             // int[] arr = Array.ConvertAll(lines.Split(' '), arrTemp => Convert.ToInt32(arrTemp)); 
             // GoodLandElectricity.pylons(20, arr);
-            //BearNSteadyGene.Steadygene("GAAATAAA");
+            BearNSteadyGene.Steadygene("GAAATAAA");
             //LeftRotation.RotateLeft(new int[]{1, 2, 3, 4, 5}, 3);
             //nsRecursion.FibonacciNumbers.GetFibonacciNumbers(6);
             //nsRecursionNBactracking.DavisStaircase.GetstepPerms(7);
@@ -68,7 +68,8 @@ namespace HelloWorld
             // obj1.CheckMaze();
             //CrossWordPuzzle.CheckMaze();
             //PowerSum.GetPowerSum();
-            nsArrays.MinimumWindowSumInArray.GetminimumWindowSum(new int[]{2, 4, 6, 1, 7, 2, 1, 5, 6, 8, 3}, 11);
+            //nsArrays.MinimumWindowSumInArray.GetminimumWindowSum(new int[]{2, 4, 6, 1, 7, 2, 1, 5, 6, 8, 3}, 11);
+            //nsArrays.RemoveDuplicatesInArray.RemoveDuplicates(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4});
         }
     }
 }
