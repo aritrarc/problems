@@ -70,7 +70,8 @@ namespace HelloWorld
             //PowerSum.GetPowerSum();
             //nsArrays.MinimumWindowSumInArray.GetminimumWindowSum(new int[]{2, 4, 6, 1, 7, 2, 1, 5, 6, 8, 3}, 11);
             //nsArrays.RemoveDuplicatesInArray.RemoveDuplicates(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4});
-            nsArrays.KadanesAlgorithm.GetMaximumSubArraySum(new int[] {-2, -3, 4, -1, -2, 1, 5, -3});
+            //nsArrays.KadanesAlgorithm.GetMaximumSubArraySum(new int[] {-2, -3, 4, -1, -2, 1, 5, -3});
+            nsArrays.FindTripletsSum.GetTripletsInArrayEqualToSum(new int[]{8 ,32 ,1, 7, 10, 50, 19, 21, 2}, 101);
         }
     }
 }
