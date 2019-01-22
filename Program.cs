@@ -34,8 +34,8 @@ namespace HelloWorld
             //Stack.Stack.ImplementStack();
             //ATaleOfTwoStacks.ATaleOfTwoStacks.DriverMethod();
             //CastleOnTheGrid.CastleOnTheGrid.MinimumMoves(new string[]{".X.",".X.","..."},0, 0, 0, 2);
-            //TripleSum.TripleSum.NumberOfTriplets(new int[]{1, 3, 5, 7}, new int[]{}, new int[]{});
-            DriverProgram program= new DriverProgram();
+            //TripleSum.TripleSum.NumberOfTriplets(new int[]{1, 3, 5, 7}, new int[]{5, 7, 9}, new int[]{7, 9, 11, 13});
+            //DriverProgram program= new DriverProgram();
             // program.PerformActionsSingleLinkedList(); 
             //program.PerformActionsDoubleLinkedList();
             //nsSockMerchant.SockMerchant.GetPairs(10, new int[]{1, 1, 3, 1, 2, 1, 3, 3, 3, 3});
@@ -71,7 +71,7 @@ namespace HelloWorld
             //nsArrays.MinimumWindowSumInArray.GetminimumWindowSum(new int[]{2, 4, 6, 1, 7, 2, 1, 5, 6, 8, 3}, 11);
             //nsArrays.RemoveDuplicatesInArray.RemoveDuplicates(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4});
             //nsArrays.KadanesAlgorithm.GetMaximumSubArraySum(new int[] {-2, -3, 4, -1, -2, 1, 5, -3});
-            nsArrays.FindTripletsSum.GetTripletsInArrayEqualToSum(new int[]{8 ,32 ,1, 7, 10, 50, 19, 21, 2}, 101);
+            //nsArrays.FindTripletsSum.GetTripletsInArrayEqualToSum(new int[]{8 ,32 ,1, 7, 10, 50, 19, 21, 2}, 101);
         }
     }
 }

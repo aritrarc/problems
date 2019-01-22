@@ -219,3 +219,10 @@ It is considered to be steady if each of the four letters occurs exactly n/4 tim
 the length of the smallest substring to replace to make the gene steady.
 
 -----------------------------------------------------------------------------------------------
+
+27. Searching : Triple Sum (M) *
+
+Given 3 arrays a,b,c of different sizes, find the number of distinct triplets (p,q,r) where 
+p is an element of a, q of b and r of c satisfying the criteria: p <= q and q >= r.
+
+-----------------------------------------------------------------------------------------------------
