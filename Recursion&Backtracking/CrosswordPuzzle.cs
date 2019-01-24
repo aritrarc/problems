@@ -6,7 +6,8 @@ using System.Text;
 
 namespace nsRecursionNBactracking
 {
-    //Find the path to the end cell in a maze which has some cells blocked.
+    //A 10 x 10 Crossword grid is provided to you, along with a set of words (or names of places) which need to be filled into 
+    //the grid. Cells are marked either + or -. Cells marked with a - are to be filled with the word list.
     public class CrossWordPuzzle
     {
         private int size = 10;
