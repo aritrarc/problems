@@ -226,3 +226,10 @@ Given 3 arrays a,b,c of different sizes, find the number of distinct triplets (p
 p is an element of a, q of b and r of c satisfying the criteria: p <= q and q >= r.
 
 -----------------------------------------------------------------------------------------------------
+
+28. Recursion: Crossword Puzzle (M) ***
+
+A 10 x 10 Crossword grid is provided to you, along with a set of words (or names of places) which need to be filled into the grid. 
+Cells are marked either + or -. Cells marked with a - are to be filled with the word list.
+
+---------------------------------------------------------------------------------------------------------
