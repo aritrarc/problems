@@ -233,3 +233,9 @@ A 10 x 10 Crossword grid is provided to you, along with a set of words (or names
 Cells are marked either + or -. Cells marked with a - are to be filled with the word list.
 
 ---------------------------------------------------------------------------------------------------------
+
+29. Recursion: power Sum (M) *
+
+Find the number of ways that a given integer, X, can be expressed as the sum of the Nth powers of unique, natural numbers.
+
+-------------------------------------------------------------------------------------------------------
