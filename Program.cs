@@ -7,6 +7,7 @@ using nsDictionariesnHashmaps;
 using nsGreedy;
 using nsArrays;
 using nsRecursionNBactracking;
+using nsDynamic;
 
 namespace HelloWorld
 {
@@ -72,6 +73,7 @@ namespace HelloWorld
             //nsArrays.RemoveDuplicatesInArray.RemoveDuplicates(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4});
             //nsArrays.KadanesAlgorithm.GetMaximumSubArraySum(new int[] {-2, -3, 4, -1, -2, 1, 5, -3});
             //nsArrays.FindTripletsSum.GetTripletsInArrayEqualToSum(new int[]{8 ,32 ,1, 7, 10, 50, 19, 21, 2}, 101);
+            nsDynamic.MaxSubArraySum.maxSubsetSum(new int[] {3, 7, 4, 6, 5});
         }
     }
 }
