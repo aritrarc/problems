@@ -68,12 +68,15 @@ namespace HelloWorld
             //nsRecursionNBactracking.CrossWordPuzzle obj1 = new CrossWordPuzzle();
             // obj1.CheckMaze();
             //CrossWordPuzzle.CheckMaze();
-            PowerSum.GetPowerSum(10, 2);
+            //PowerSum.GetPowerSum(10, 2);
             //nsArrays.MinimumWindowSumInArray.GetminimumWindowSum(new int[]{2, 4, 6, 1, 7, 2, 1, 5, 6, 8, 3}, 11);
             //nsArrays.RemoveDuplicatesInArray.RemoveDuplicates(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4});
             //nsArrays.KadanesAlgorithm.GetMaximumSubArraySum(new int[] {-2, -3, 4, -1, -2, 1, 5, -3});
             //nsArrays.FindTripletsSum.GetTripletsInArrayEqualToSum(new int[]{8 ,32 ,1, 7, 10, 50, 19, 21, 2}, 101);
-            nsDynamic.MaxSubArraySum.maxSubsetSum(new int[] {3, 7, 4, 6, 5});
+            //nsDynamic.MaxSubArraySum.maxSubsetSum(new int[] {3, 7, 4, 6, 5});
+            //nsDynamic.Abbreviations.checkIfAbbreviation("dQYHQEMNEFFRFJTQmNWHFVXRXlGTFNBqWQmyOWYWSTDSTMJRYHjBNTEWADLgHVgGIRGKFQSeCXNFNaIFAXOiQORUDROaNoJPXWZXIAABZKSZYFTDDTRGZXVZZNWNRHMvSTGEQCYAJSFvbqivjuqvuzafvwwifnrlcxgbjmigkms","QYHQEMNEFFRFJTQNWHFVXRXGTFNBWQOWYWSTDSTMJRYHBNTEWADLHVGIRGKFQSCXNFNIFAXOQORUDRONJPXWZXIAABZKSZYFTDDTRGZXVZZNWNRHMSTGEQCYAJSF");
+            //nsDynamic.Abbreviations.checkIfAbbreviation("daBcd","ABC");
+            nsDynamic.Candies.getMinCandies(new int[] {2, 4, 3, 5, 2, 6, 4, 5});
         }
     }
 }
