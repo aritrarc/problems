@@ -246,3 +246,18 @@ Find the number of ways that a given integer, X, can be expressed as the sum of 
 Given an array of integers, find the subset of non-adjacent elements with the maximum sum. Calculate the sum of that subset.
 
 ----------------------------------------------------------------------------------------------------------------
+
+21. Dynamic Programming : Candies (M) **
+
+Alice wants to give at least 1 candy to each child. If two children sit next to each other, then the one with the higher rating
+must get more candies. Alice wants to minimize the total number of candies she must buy. Find the minimum number of candies
+Alice has to buy.
+
+--------------------------------------------------------------------------------------------------------------
+
+22. Dynamic Programming: Coin Change (M) **
+
+a) Find total number of possible ways to make a sum using specific set of coins.
+b) Find the minimum number of coins required to make a sum using specific set of coins.
+
+--------------------------------------------------------------------------------------------------------------

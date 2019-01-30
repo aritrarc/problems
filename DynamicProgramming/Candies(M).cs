@@ -7,8 +7,9 @@ namespace nsDynamic
 {
     public class Candies
     {
-        private static int count = 0;
-        //Given an array of integers, find the subset of non-adjacent elements with the maximum sum. Calculate the sum of that subset.
+       
+        //Alice wants to give at least 1 candy to each child. If two children sit next to each other, then the one with the higher rating must get more candies. 
+        //Alice wants to minimize the total number of candies she must buy. Find the minimum number of candies Alice has to buy.
         public static void getCandiyCounts(int[] arr)
         {
 
@@ -68,8 +69,50 @@ namespace nsDynamic
             for (int i = 0; i < temp.Length; i++)
             {
                 Console.WriteLine(temp[i]);
-                count += temp[i];
+                //count += temp[i];
             }
+            //Console.WriteLine(count);
+        }
+
+        public static void getMinCandies(int[] arr)
+        {
+            int[] tempArray = new int[arr.Length];
+            long count = 0;
+
+
+            //First fill all elements with 1
+            for(int i=0; i<tempArray.Length; i++)
+            {
+                tempArray[i] = 1;
+            }
+
+            
+            //Check every element and if it is greater than previous element increament by 1.
+            for(int i=1 ; i<arr.Length; i++)
+            {
+                if(arr[i] > arr[i-1])
+                {
+                    tempArray[i] = tempArray[i - 1] + 1;
+                }
+            }
+            
+
+            //Check the above logic in reverse order. If the current value in temparray is greater for elemenets that is greater in array do nothing. else increment by 1.
+            for(int i=arr.Length-2 ; i>=0; i--)
+            {
+                if(arr[i] > arr[i+1])
+                {
+                    if(tempArray[i] <= tempArray[i+1]){
+                        tempArray[i] = tempArray[i+1] + 1;
+                    }
+                }
+            }
+
+            for(int i = 0; i< tempArray.Length; i++)
+            {
+                count = count + tempArray[i];
+            }
+
             Console.WriteLine(count);
         }
 
