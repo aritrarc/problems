@@ -254,3 +254,10 @@ must get more candies. Alice wants to minimize the total number of candies she m
 Alice has to buy.
 
 --------------------------------------------------------------------------------------------------------------
+
+22. Dynamic Programming: Coin Change (M) **
+
+a) Find total number of possible ways to make a sum using specific set of coins.
+b) Find the minimum number of coins required to make a sum using specific set of coins.
+
+--------------------------------------------------------------------------------------------------------------

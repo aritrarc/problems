@@ -76,7 +76,9 @@ namespace HelloWorld
             //nsDynamic.MaxSubArraySum.maxSubsetSum(new int[] {3, 7, 4, 6, 5});
             //nsDynamic.Abbreviations.checkIfAbbreviation("dQYHQEMNEFFRFJTQmNWHFVXRXlGTFNBqWQmyOWYWSTDSTMJRYHjBNTEWADLgHVgGIRGKFQSeCXNFNaIFAXOiQORUDROaNoJPXWZXIAABZKSZYFTDDTRGZXVZZNWNRHMvSTGEQCYAJSFvbqivjuqvuzafvwwifnrlcxgbjmigkms","QYHQEMNEFFRFJTQNWHFVXRXGTFNBWQOWYWSTDSTMJRYHBNTEWADLHVGIRGKFQSCXNFNIFAXOQORUDRONJPXWZXIAABZKSZYFTDDTRGZXVZZNWNRHMSTGEQCYAJSF");
             //nsDynamic.Abbreviations.checkIfAbbreviation("daBcd","ABC");
-            nsDynamic.Candies.getMinCandies(new int[] {2, 4, 3, 5, 2, 6, 4, 5});
+            //nsDynamic.Candies.getMinCandies(new int[] {2, 4, 3, 5, 2, 6, 4, 5});
+            //nsDynamic.CoinChange.DriverMethod(10, new long[] {2, 5, 3, 6});
+            nsDynamic.CoinChange.DriverToSum(11, new long[]{1, 5, 6, 9});
         }
     }
 }
