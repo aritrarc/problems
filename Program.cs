@@ -79,8 +79,10 @@ namespace HelloWorld
             //nsDynamic.Candies.getMinCandies(new int[] {2, 4, 3, 5, 2, 6, 4, 5});
             //nsDynamic.CoinChange.DriverMethod(10, new long[] {2, 5, 3, 6});
             //nsDynamic.CoinChange.DriverToSum(11, new long[]{1, 5, 6, 9});
-            nsStacksQueues.QueueUsingStacks.usingTwoStacks(new int[] { 1, 2, 3, 4, 5});
-            //nsRecursionNBactracking.StoneDivision2.stoneDivision(12, new long[]{2, 4});
+            //nsStacksQueues.QueueUsingStacks.usingTwoStacks(new int[] { 1, 2, 3, 4, 5});
+            //nsRecursionNBactracking.StoneDivision2.stoneDivision(12, new long[]{2 ,4});
+            nsRecursionNBactracking.StoneDivision2.stoneDivision(64, new long[]{2, 4, 8, 16, 64});
+            //nsRecursionNBactracking.StoneDivision2.stoneDivision(1, new long[]{1, 2});
         }
     }
 }

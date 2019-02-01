@@ -261,3 +261,12 @@ a) Find total number of possible ways to make a sum using specific set of coins.
 b) Find the minimum number of coins required to make a sum using specific set of coins.
 
 --------------------------------------------------------------------------------------------------------------
+
+23. Recursion : Stone Dvision Revisited (M) *
+
+You have a pile of n stones that you want to split into multiple piles, as well as a set, S, of m distinct integers
+look for some x in S such that x!= y and y is divisible by x (i.e., x is a factor of y); if such an x exists, 
+you can split the pile into y/x equal smaller piles.
+Calculate the maximum possible number of moves you can perform and print it on a new line.
+
+--------------------------------------------------------------------------------------------------------------------
