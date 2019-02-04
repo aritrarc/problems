@@ -270,3 +270,10 @@ you can split the pile into y/x equal smaller piles.
 Calculate the maximum possible number of moves you can perform and print it on a new line.
 
 --------------------------------------------------------------------------------------------------------------------
+
+24. Dynamic Programming : Sam and Substrings (M) **
+
+Given an integer as a string, sum all of its substrings cast as integers. As the number may become large, 
+return the value modulo 10^9 + 7.
+
+----------------------------------------------------------------------------------------------------------------

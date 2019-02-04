@@ -86,7 +86,8 @@ namespace HelloWorld
             //nsDynamic.LongestSubsequences.LongestPalindromicSubsquence("BBABCBCAB");
             //nsDynamic.LongestSubsequences.LongestCommonSubsquence("AGGTAB","GXTXAYB");
             //nsDynamic.ModifiedFibonacci.getModifiedFibonacci(1, 1, 20);
-            nsStacksQueues.ReverseStack.DriverMethod();
+            //nsStacksQueues.ReverseStack.DriverMethod();
+            nsDynamic.SamAndSubstrings.GetSubstringSum("972698438521");
         }
     }
 }
