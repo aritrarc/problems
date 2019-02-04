@@ -85,7 +85,8 @@ namespace HelloWorld
             //nsRecursionNBactracking.StoneDivision2.stoneDivision(1, new long[]{1, 2});
             //nsDynamic.LongestSubsequences.LongestPalindromicSubsquence("BBABCBCAB");
             //nsDynamic.LongestSubsequences.LongestCommonSubsquence("AGGTAB","GXTXAYB");
-            nsDynamic.ModifiedFibonacci.getModifiedFibonacci(1, 1, 20);
+            //nsDynamic.ModifiedFibonacci.getModifiedFibonacci(1, 1, 20);
+            nsStacksQueues.ReverseStack.DriverMethod();
         }
     }
 }
