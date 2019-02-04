@@ -12,7 +12,8 @@ namespace nsDynamic
         public static void maxSubsetSum(int[] arr)
         {
             //Recursive(arr, arr.Length - 1);
-            getmax(arr);
+            //getmax(arr);
+            maxSubArray(arr);
             Console.WriteLine(global_max);
         }
 
@@ -41,6 +42,50 @@ namespace nsDynamic
             }
 
             return global_max;
+        }
+
+        static int[] maxSubArray(int[] arr)
+        {
+            
+            int n = arr.Length;
+            int[] valueArr = new int[n];
+            int subsequenceSum = 0;
+            int[] answer = new int[2];
+
+            valueArr[0] = arr[0];
+            global_max = arr[0];
+
+            subsequenceSum = arr[0];
+            //Max Subsequence
+            // if(arr[0] < 0){
+            //     subsequenceSum += arr[0];
+            // }
+            //End
+
+            for(int i=1; i<arr.Length; i++)
+            {
+                //Max Subsequence
+                if(arr[i] > 0){
+                    if(subsequenceSum < 0){
+                        subsequenceSum = arr[i];
+                    }else{
+                        subsequenceSum += arr[i];
+                    }
+                }else if (arr[i] > subsequenceSum && subsequenceSum < 0){
+                    subsequenceSum = arr[i];
+                }
+                //End
+
+                int local_max = Math.Max(arr[i], arr[i] + valueArr[i-1]);
+                if(local_max > global_max){
+                    global_max = local_max;
+                }
+                valueArr[i] = local_max;
+            }
+
+            answer[0] = global_max;
+            answer[1] = subsequenceSum;
+            return answer;
         }
     }
 }
