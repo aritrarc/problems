@@ -277,3 +277,10 @@ Given an integer as a string, sum all of its substrings cast as integers. As the
 return the value modulo 10^9 + 7.
 
 ----------------------------------------------------------------------------------------------------------------
+
+25. Searching : Minimum Loss (M) *
+
+Lauren has a chart of distinct projected prices for a house over the next several years. She must buy the house in one year
+and sell it in another, and she must do so at a loss. She wants to minimize her financial loss.
+
+---------------------------------------------------------------------------------------------------------------
