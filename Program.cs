@@ -89,7 +89,8 @@ namespace HelloWorld
             //nsStacksQueues.ReverseStack.DriverMethod();
             //nsDynamic.SamAndSubstrings.GetSubstringSum("972698438521");
             //nsDynamic.StockMax.stockMax(new int[] {5, 3, 2});
-            nsSearching.MinimumLoss.minimumLoss(new long[] {20, 7, 8, 2, 5});
+            //nsSearching.MinimumLoss.minimumLoss(new long[] {20, 7, 8, 2, 5});
+            nsDynamic.SherlockAndCost.cost(new int[] {2, 4, 3});
         }
     }
 }

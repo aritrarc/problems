@@ -284,3 +284,11 @@ Lauren has a chart of distinct projected prices for a house over the next severa
 and sell it in another, and she must do so at a loss. She wants to minimize her financial loss.
 
 ---------------------------------------------------------------------------------------------------------------
+
+26. Dynamic Progrtamming : Sherlock and Cost (M) **
+
+You will be given an array B and must determine an array A. There is a special rule: For all i, A[i] <= B[i] . That is, A[i]
+can be any number you choose such that 1 <= A[i] <= B[i]. Your task is to select a series of A[i] given B[i] such that
+ the sum of the absolute difference of consecutive pairs of A is maximized
+
+ --------------------------------------------------------------------------------------------------------------
