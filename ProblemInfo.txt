@@ -292,3 +292,11 @@ can be any number you choose such that 1 <= A[i] <= B[i]. Your task is to select
  the sum of the absolute difference of consecutive pairs of A is maximized
 
  --------------------------------------------------------------------------------------------------------------
+
+ 27. Dynamic Programming : Equal (M) **
+
+Christy must equalize the number of chocolates in a series of operations. For each operation, she can give 1, 2, 5 chocolates 
+to all but one colleague. Everyone who gets chocolate in a round receives the same number of pieces.
+Given a starting distribution, calculate the minimum number of operations needed so that every colleague has the same number of chocolates.
+
+-------------------------------------------------------------------------------------------------------------------
