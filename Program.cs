@@ -91,7 +91,8 @@ namespace HelloWorld
             //nsDynamic.StockMax.stockMax(new int[] {5, 3, 2});
             //nsSearching.MinimumLoss.minimumLoss(new long[] {20, 7, 8, 2, 5});
             //nsDynamic.SherlockAndCost.cost(new int[] {2, 4, 3});
-            nsDynamic.Equal.equal(new int[] {2, 2, 3, 7});
+            //nsDynamic.Equal.equal(new int[] {2, 2, 3, 7});
+            nsStrings.SeparateTheNumber.separateNumbers("88888888888888888888888888888888");
         }
     }
 }

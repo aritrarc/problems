@@ -300,3 +300,11 @@ to all but one colleague. Everyone who gets chocolate in a round receives the sa
 Given a starting distribution, calculate the minimum number of operations needed so that every colleague has the same number of chocolates.
 
 -------------------------------------------------------------------------------------------------------------------
+
+28. Strings: Separate the Numbers (E) *
+
+A numeric string, s, is beautiful if it can be split into a sequence of two or more positive integers,a[1],a[2] etc.. satisfying the following conditions:
+a[i] - a[i - 1] = 1 and a[i] does not contain leading zeroes. Print YES or NO whether a number is beautiful and 
+if yes print x , the smallest first number of the increasing sequence
+
+-----------------------------------------------------------------------------------------------------------------------------
