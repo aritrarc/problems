@@ -92,7 +92,8 @@ namespace HelloWorld
             //nsSearching.MinimumLoss.minimumLoss(new long[] {20, 7, 8, 2, 5});
             //nsDynamic.SherlockAndCost.cost(new int[] {2, 4, 3});
             //nsDynamic.Equal.equal(new int[] {2, 2, 3, 7});
-            nsStrings.SeparateTheNumber.separateNumbers("88888888888888888888888888888888");
+            //nsStrings.SeparateTheNumber.separateNumbers("88888888888888888888888888888888");
+            nsStrings.URLify.URLifyString();
         }
     }
 }
