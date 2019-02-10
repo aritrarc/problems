@@ -8,6 +8,7 @@ using nsGreedy;
 using nsArrays;
 using nsRecursionNBactracking;
 using nsDynamic;
+using nsMiscellaneous;
 
 namespace HelloWorld
 {
@@ -93,7 +94,8 @@ namespace HelloWorld
             //nsDynamic.SherlockAndCost.cost(new int[] {2, 4, 3});
             //nsDynamic.Equal.equal(new int[] {2, 2, 3, 7});
             //nsStrings.SeparateTheNumber.separateNumbers("88888888888888888888888888888888");
-            nsStrings.URLify.URLifyString();
+            //nsStrings.URLify.URLifyString();
+            nsMiscellaneous.NumberOfPowers.NumberOfPowersRecursive(3, 100);
         }
     }
 }
