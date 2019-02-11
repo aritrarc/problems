@@ -308,3 +308,10 @@ a[i] - a[i - 1] = 1 and a[i] does not contain leading zeroes. Print YES or NO wh
 if yes print x , the smallest first number of the increasing sequence
 
 -----------------------------------------------------------------------------------------------------------------------------
+
+29. Searching: HackerLand Radio Transmitters (M)
+
+Given a map of Hackerland and the transmission range, determine the minimum number of transmitters so that every house 
+is within range of at least one transmitter. Each transmitter must be installed on top of an existing house.
+
+-------------------------------------------------------------------------------------------------------------------------
