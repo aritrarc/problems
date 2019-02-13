@@ -10,6 +10,6 @@ for _ in range(n):
 query_name = input()
 
 if query_name in dict:
-    print("{0:.2f}".format(sum(dict[query_name])/len(dict[query_name]),2))
+    #print("{0:.2f}".format(sum(dict[query_name])/len(dict[query_name]),2))
 else:
     print("Doesn't exist")

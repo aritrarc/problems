@@ -1,4 +1,6 @@
-N = int(input())
+#Using If-else
+
+N = 0
 LI = []
 
 for _ in range(N):
@@ -21,5 +23,18 @@ for _ in range(N):
         LI.pop()
     else:
         print("Command doesn't exist")
-     
-        
+
+#Using eval&Join
+
+n = int(input())
+l = []
+for _ in range(n):
+    s = input().split()
+    cmd = s[0]
+    args = s[1:] 
+
+    if cmd != "print":
+        cmd += "(" + ",".join(args) + ")"
+        eval("l." +cmd )
+    else:
+        print(l)
