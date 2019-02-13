@@ -18,7 +18,14 @@ def swap(str):
     result = "".join( i.lower() if i.isupper() else i.upper() for i in str)
     print(result)
 
-str = input()
-swap(str)
+
+
+
+def split_and_join(line):
+    line = line.split()
+    print("-".join(line))
+
+line = input()
+split_and_join(line)
 
 
