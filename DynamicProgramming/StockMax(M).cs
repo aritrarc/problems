@@ -22,7 +22,7 @@ namespace nsDynamic
         public static long getMaxProfit(int[] prices)
         {
             long profit = 0;
-            int maxSoFar = 0;
+            long maxSoFar = 0;
             for (int i = prices.Length - 1; i > -1; i--)
             {
                 if (prices[i] >= maxSoFar)
