@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace SingleLinkedListDT
 {
-    internal class Node
+    public class Node
     {
         public int data;
         public Node link;
@@ -19,7 +19,7 @@ namespace SingleLinkedListDT
 
     public class SingleLinkedList
     {
-        Node start;
+        public Node start;
 
         public SingleLinkedList()
         {

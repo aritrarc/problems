@@ -9,6 +9,7 @@ using nsArrays;
 using nsRecursionNBactracking;
 using nsDynamic;
 using nsMiscellaneous;
+using nsLinkedList;
 
 namespace HelloWorld
 {
@@ -97,7 +98,8 @@ namespace HelloWorld
             //nsStrings.URLify.URLifyString();
             //nsMiscellaneous.NumberOfPowers.NumberOfPowersRecursive(3, 100);
             //nsSearching.HackerLandRadioTransmitters.hackerlandRadioTransmitters(new int[]{7, 2, 4, 6, 5, 9, 12, 11}, 2);
-            nsStrings.StringCompression.CompressString();
+            //nsStrings.StringCompression.CompressString();
+            RemoveDuplicatesFromSingleLinkedList.RemoveDuplicatesInplace();
         }
     }
 }
