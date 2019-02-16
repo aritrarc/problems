@@ -16,16 +16,16 @@ namespace nsLinkedList
              //Display original list
              singleLinkedList.display();
 
-             Dictionary<int, int> dict = new Dictionary<int, int>();
+             HashSet<int> data = new HashSet<int>();
              Node p;
              p = singleLinkedList.start;
 
-             dict.Add(p.data, 1);
+             data.Add(p.data);
 
              while(p.link != null)
              {
-                 if(!dict.ContainsKey(p.link.data)){
-                     dict.Add(p.link.data, 1);
+                    if(!data.Contains(p.link.data)){
+                     data.Add(p.data);
                      p = p.link;
                  }else{
                      p.link = p.link.link;
