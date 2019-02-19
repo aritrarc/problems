@@ -361,9 +361,11 @@ namespace SingleLinkedListDT
             }
 
             p = start;
+            Console.Write(p.data);
+            p = p.link;
             while (p != null)
             {
-                Console.Write(" " + p.data);
+                Console.Write("->" + p.data);
                 p = p.link;
             }
             Console.WriteLine();
