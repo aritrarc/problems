@@ -102,7 +102,8 @@ namespace HelloWorld
             //RemoveDuplicatesFromSingleLinkedList.RemoveDuplicates();
             //KthToLastElement.FindkthtolastElementRecursive(3);
             //PalindromeLinkedList.CheckIfPalindrome();
-            ListSum.FindSumOfTwoLinkedLists();
+            //ListSum.FindSumOfTwoLinkedLists();
+            LoopDetection.CheckIfCycle();
         }
     }
 }

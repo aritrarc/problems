@@ -4,8 +4,10 @@
 A = [1, 2, 3, 4]
 [print(i, end="\n") for i in A]
 
-s1 = set(map(int, input().split()))
-s2 = "intersection_update"
-s3 = (2, 3, 4)
-print(s1)
-eval("s1." + s2 + "s3" )
+# s1 = set(map(int, input().split()))
+# s2 = "intersection_update"
+# s3 = (2, 3, 4)
+# print(s1)
+# eval("s1." + s2 + "s3" )
+
+print([i*i for i in range(5)])
