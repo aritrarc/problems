@@ -14,6 +14,7 @@ namespace Stack
             void Push(Object obj);
             Object Pop();
             Object Peek();
+            Object Min();
             void Display();
         }
 
@@ -21,6 +22,7 @@ namespace Stack
         {
             int top = -1;
             int stackSize;
+            Object minElement = Int32.MaxValue;
 
             Object[] item;
             public int Stacksize {
@@ -53,6 +55,9 @@ namespace Stack
                     Console.WriteLine("Stack is full");
                 }
                 else{
+                    if((int)obj < (int)minElement){
+                        minElement = obj;
+                    }
                     top++;
                     item[top] = obj;
                 }
@@ -65,11 +70,37 @@ namespace Stack
                      Console.WriteLine("Stack is empty");
                      return "Empty";
                  }else {
-                     Object poppedItem = item[top];
+                     Object poppedItem = item[top];                    
                      item[top] = "";
                      top = top - 1;
+                     if((int)poppedItem <= (int)minElement){
+                        minElement = GetNewMinRecursively(Int32.MaxValue);
+                    }
                      return poppedItem;
                  }
+            }
+
+            public Object Min(){
+
+                if(isEmpty()){
+                    Console.WriteLine("Empty stack has no minimum");
+                    return "Empty";
+                }else {
+                    return minElement;
+                }
+            }
+
+            Object GetNewMinRecursively(Object curr_min)
+            {
+                if(isEmpty()){
+                    return curr_min;
+                }
+                Object curr_obj = item[top];
+                item[top] = "";
+                top = top - 1;
+                curr_min = GetNewMinRecursively(Math.Min((int)curr_min,(int)curr_obj));
+                Push(curr_obj);
+                return curr_min;
             }
 
             public Object Peek(){
@@ -95,25 +126,69 @@ namespace Stack
         public static void ImplementStack()
         {
             //Create a stack of size 5
-            StackImplementation stck = new StackImplementation(5);
+            Console.WriteLine("");
+            Console.WriteLine("Stack Operations:");
+            Console.WriteLine("===============");
+            Console.WriteLine("");
+
+            StackImplementation stck = new StackImplementation(6);
 
             Console.WriteLine(stck.isEmpty());
-            for(int i=0; i<6; i++)
-            {
-                stck.Push(i);
-            }
 
+            Console.WriteLine(stck.Min());
+
+            // for(int i=0; i<6; i++)
+            // {
+            //     stck.Push(i);
+            // }
+            stck.Push(2);
+            stck.Push(3);
+            stck.Push(1);
+            stck.Push(4);
+            stck.Push(0);
+            stck.Push(5);
+
+            Console.WriteLine("");
+            Console.WriteLine("Displaying Items in the stack:");
+            Console.WriteLine("------------------------------");
             stck.Display();
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("");
+
+            Console.WriteLine("Minimum Item:" +stck.Min());
 
             Console.WriteLine(stck.isEmpty());
 
-            Console.WriteLine(stck.Peek());
+            Console.WriteLine("Peeked item:" + stck.Peek());
 
-            Console.WriteLine(stck.Pop());
+            Console.WriteLine("Popped Item : " + stck.Pop());
 
-             Console.WriteLine(stck.Pop());
+            Console.WriteLine("Popped Item :" + stck.Pop());
 
-             stck.Display();
+            Console.WriteLine("Popped Item :" + stck.Pop());
+
+            Console.WriteLine("Minimum item:" + stck.Min());
+
+            Console.WriteLine("");
+            Console.WriteLine("Displaying Items in the stack:");
+            Console.WriteLine("------------------------------");
+            stck.Display();
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("");
+
+            Console.WriteLine("Popped Item :" + stck.Pop());
+
+            stck.Push(5);
+
+            Console.WriteLine("Minimum item:" + stck.Min());
+
+            Console.WriteLine("");
+            Console.WriteLine("Displaying Items in the stack:");
+            Console.WriteLine("------------------------------");
+            stck.Display();
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("");
+
 
         }
     }
