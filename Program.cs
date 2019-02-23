@@ -34,7 +34,8 @@ namespace HelloWorld
             //GreedyFlorist.GreedyFlorist.MInimizeCost(3, new int[] {2, 5, 6});
             //MaxMin.MaxMin.MinimumUnfairness(3, new int[] {100, 200, 300, 350, 400, 401, 402});
             //BalancedBrackets.BalancedBrackets.IsBalanced("()()()[]");
-            Stack.Stack.ImplementStack();
+            //Stack.Stack.ImplementStack();
+            nsStacksQueues.StackOfPlates.PerformStackSetOperations();
             //ATaleOfTwoStacks.ATaleOfTwoStacks.DriverMethod();
             //CastleOnTheGrid.CastleOnTheGrid.MinimumMoves(new string[]{".X.",".X.","..."},0, 0, 0, 2);
             //TripleSum.TripleSum.NumberOfTriplets(new int[]{1, 3, 5, 7}, new int[]{5, 7, 9}, new int[]{7, 9, 11, 13});
