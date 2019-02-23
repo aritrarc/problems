@@ -25,6 +25,7 @@ namespace Stack
             Object minElement = Int32.MaxValue;
 
             Object[] item;
+            Object[] minItem;
             public int Stacksize {
                 get{return stackSize;}
                 set{stackSize = value;}
@@ -33,12 +34,14 @@ namespace Stack
             public StackImplementation(){
                 Stacksize = 10;
                 item = new Object[Stacksize];
+                minItem = new Object[Stacksize];
                 top = -1;
             }
 
             public StackImplementation(int capacity){
                 Stacksize = capacity;
                 item = new Object[Stacksize];
+                minItem = new Object[Stacksize];
                 top = -1;
             }
 
@@ -60,6 +63,7 @@ namespace Stack
                     }
                     top++;
                     item[top] = obj;
+                    minItem[top] = minElement;
                 }
             }
 
@@ -72,10 +76,15 @@ namespace Stack
                  }else {
                      Object poppedItem = item[top];                    
                      item[top] = "";
+                     minItem[top] = "";
                      top = top - 1;
-                     if((int)poppedItem <= (int)minElement){
-                        minElement = GetNewMinRecursively(Int32.MaxValue);
-                    }
+                     if(!isEmpty()){
+                     minElement = minItem[top];}else{
+                         minElement = Int32.MaxValue; 
+                     }
+                    //  if((int)poppedItem <= (int)minElement){
+                    //     minElement = GetNewMinRecursively(Int32.MaxValue);
+                    // }
                      return poppedItem;
                  }
             }
@@ -86,7 +95,7 @@ namespace Stack
                     Console.WriteLine("Empty stack has no minimum");
                     return "Empty";
                 }else {
-                    return minElement;
+                    return minItem[top];
                 }
             }
 
@@ -188,6 +197,8 @@ namespace Stack
             stck.Display();
             Console.WriteLine("------------------------------");
             Console.WriteLine("");
+
+            Console.WriteLine("Minimum item:" + stck.Min());
 
 
         }
