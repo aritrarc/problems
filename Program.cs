@@ -35,7 +35,8 @@ namespace HelloWorld
             //MaxMin.MaxMin.MinimumUnfairness(3, new int[] {100, 200, 300, 350, 400, 401, 402});
             //BalancedBrackets.BalancedBrackets.IsBalanced("()()()[]");
             //Stack.Stack.ImplementStack();
-            nsStacksQueues.StackOfPlates.PerformStackSetOperations();
+            //nsStacksQueues.StackOfPlates.PerformStackSetOperations();
+            nsStacksQueues.SortedStack.GetSortedStack(new int[]{15, 12, 10, 18, 16, 9, 11});
             //ATaleOfTwoStacks.ATaleOfTwoStacks.DriverMethod();
             //CastleOnTheGrid.CastleOnTheGrid.MinimumMoves(new string[]{".X.",".X.","..."},0, 0, 0, 2);
             //TripleSum.TripleSum.NumberOfTriplets(new int[]{1, 3, 5, 7}, new int[]{5, 7, 9}, new int[]{7, 9, 11, 13});
