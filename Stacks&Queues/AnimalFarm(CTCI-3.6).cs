@@ -22,41 +22,17 @@ namespace nsStacksQueues
         {
             LinkedList<int> dogs = new LinkedList<int>();
             LinkedList<int> cats = new LinkedList<int>();
-            static LinkedListNode<int> catStart = null;
-            static LinkedListNode<int> dogStart = null;
-            LinkedListNode<int> catCurrent = catStart;
-            LinkedListNode<int> dogCurrent = dogStart;
             int index = 0;
             public void Enqueue(char c)
             {
-                //LinkedListNode<int> dataNode = new LinkedListNode<int>(index + 1);
                 if (c == 'C')
                 {
-                    if (catCurrent != null)
-                    {
-                        cats.Append(index+1);
-                        catCurrent = catCurrent.Next;
-                    }
-                    else
-                    {
-                        catCurrent = new LinkedListNode<int>(index + 1);
-                        catStart = catCurrent;
-                    }
+                    cats.AddLast(index + 1);
                     index++;
                 }
                 else if (c == 'D')
                 {
-                    if (dogCurrent != null)
-                    {
-                        LinkedListNode<int> newnode = new LinkedListNode<int>(index + 1);
-                        newnode  = dogCurrent.Next;
-                        dogCurrent = dogCurrent.Next;
-                    }
-                    else
-                    {
-                        dogCurrent = new LinkedListNode<int>(index + 1);
-                        dogStart = dogCurrent;
-                    }
+                    dogs.AddLast(index + 1);
                     index++;
                 }
 
@@ -64,87 +40,89 @@ namespace nsStacksQueues
 
             public int DequeueCat()
             {
-                if (catStart == null)
+                if (cats.Count == 0)
                 {
                     Console.WriteLine("No Cats left to dequeue");
                     return 0;
                 }
                 else
                 {
-                    int value = catStart.Value;
-                    catStart = catStart.Next;
+                    int value = cats.First.Value;
+                    cats.RemoveFirst();
                     return value;
                 }
             }
 
             public int DequeueDog()
             {
-                if (dogStart == null)
+                if (dogs.Count == 0)
                 {
                     Console.WriteLine("No Dogs left to dequeue");
                     return 0;
                 }
                 else
                 {
-                    int value = dogStart.Value;
-                    dogStart = dogStart.Next;
+                    int value = dogs.First.Value;
+                    dogs.RemoveFirst();
                     return value;
                 }
             }
 
             public int DequeueAny()
             {
-                if (catStart == null && dogStart == null)
+                if (cats.Count == 0 && dogs.Count == 0)
                 {
                     Console.WriteLine("Animal farm is empty");
                     return 0;
                 }
-                else if (catStart != null)
+                else if (cats.Count > 0)
                 {
-                    if (dogStart != null)
+                    if (dogs.Count > 0)
                     {
-                        if (catStart.Value <= dogStart.Value)
+                        if (cats.First.Value <= dogs.First.Value)
                         {
-                            int value = catStart.Value;
-                            catStart = catStart.Next;
+                            int value = cats.First.Value;
+                            cats.RemoveFirst();
                             return value;
                         }
                         else
                         {
-                            int value = dogStart.Value;
-                            dogStart = dogStart.Next;
+                            int value = dogs.First.Value;
+                            dogs.RemoveFirst();
                             return value;
                         }
                     }
                     else
                     {
-                        int value = catStart.Value;
-                        catStart = catStart.Next;
+                        int value = cats.First.Value;
+                        cats.RemoveFirst();
                         return value;
                     }
                 }
                 else
                 {
-                    int value = dogStart.Value;
-                    dogStart = dogStart.Next;
+                    int value = dogs.First.Value;
+                    dogs.RemoveFirst();
                     return value;
                 }
             }
 
-            public void display ()
+            public void display()
             {
                 Console.WriteLine("Animal Farm Animals:");
                 Console.WriteLine("###################");
-                LinkedListNode<int> counter = catStart;
-                while(counter != null){
-                    Console.Write(counter.Value + ",");
-                    counter = counter.Next;
+                Console.Write("DOG: ");
+                foreach (int i in dogs)
+                {
+                    Console.Write(i + " ");
                 }
-                counter = dogStart;
-                while(counter != null){
-                    Console.Write(counter.Value + ",");
-                    counter = counter.Next;
+                Console.WriteLine("");
+                Console.Write("CATS: ");
+                foreach (int i in cats)
+                {
+                    Console.Write(i + " ");
                 }
+                Console.WriteLine("");
                 Console.WriteLine("###################");
             }
         }

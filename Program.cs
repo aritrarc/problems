@@ -10,7 +10,7 @@ using nsRecursionNBactracking;
 using nsDynamic;
 using nsMiscellaneous;
 using nsLinkedList;
-using nsBinaryTree;
+using nsStacksQueues;
 
 namespace HelloWorld
 {
@@ -107,9 +107,10 @@ namespace HelloWorld
             //PalindromeLinkedList.CheckIfPalindrome();
             //ListSum.FindSumOfTwoLinkedLists();
             //LoopDetection.CheckIfCycle();
-            BinaryTree tree = new BinaryTree();
-            tree.CreateBinaryTree();
-            tree.displayBinaryTree();
+            // BinaryTree tree = new BinaryTree();
+            // tree.CreateBinaryTree();
+            // tree.displayBinaryTree();
+            AnimalFarmDataStructure.ImplementAnimalFarm();
         }
     }
 }
