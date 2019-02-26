@@ -40,15 +40,63 @@ from collections import namedtuple
 
 
 #-------------- Ordered Dictionary -------------
-from collections import OrderedDict
-ordered_dict = OrderedDict()
+# from collections import OrderedDict
+# ordered_dict = OrderedDict()
+# for _ in range(int(input())):
+#     *item, price = input().split()
+#     groc = " ".join(str(i) for i in item)
+#     if groc in ordered_dict:
+#         ordered_dict[groc] = int(ordered_dict[groc]) + int(price)
+#     else:
+#         ordered_dict[groc] = price
+# for x,y in ordered_dict.items():
+#     print(str(x) + " " + str(y))
+
+# from collections import OrderedDict
+# od = OrderedDict()
+# for _ in range(int(input())):
+#     word = input()
+#     if word in od:
+#         od[word] = int(od[word]) + 1
+#     else:
+#         od[word] = 1
+# print(len(od))
+# print(" ".join(str(i) for i in list(od.values())))
+
+#-------------- Dequeue ------------------
+# from collections import deque
+# d = deque()
+# for _ in range(int(input())):
+#     ops , *args = input().split()
+#     if len(args) > 0:
+#         exp = "d." + ops + "(" + str(args) +")"
+#         #getattr(d,ops,args)
+#     else:
+#         exp = "d." + ops + "()"
+#         #getattr(d,ops)
+#     eval(exp)
+# print(" ".join(str(i[0]) for i in d))
+#print(*[item for item in d])
+
+#--------Piling up ----------------
+from collections import deque
 for _ in range(int(input())):
-    *item, price = input().split()
-    groc = " ".join(str(i) for i in item)
-    if groc in ordered_dict:
-        ordered_dict[groc] = int(ordered_dict[groc]) + int(price)
+    n = int(input())
+    A = list(input().split())
+    d = deque(A)
+    i = 0  
+    j = len(A) - 1
+    val = 0
+    while abs(i - j) > 1:
+        if A[i] >= A[j]:
+            val = d.popleft()
+            i = i+1
+        else:
+            val = d.pop()
+            j = j-1
+    if A[i] >= val or A[j] >= val:
+        print("No")
     else:
-        ordered_dict[groc] = price
-for x,y in ordered_dict.items():
-    print(str(x) + " " + str(y))
+        print("Yes")
+
 
