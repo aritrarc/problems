@@ -34,7 +34,7 @@ namespace nsStacksQueues
                 {
                     if (catCurrent != null)
                     {
-                        cats.Append(index+1)
+                        cats.Append(index+1);
                         catCurrent = catCurrent.Next;
                     }
                     else

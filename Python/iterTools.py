@@ -15,6 +15,7 @@
 
 #itertools odd even
 import itertools as itr
+import collections as col
 
 iterable = itr.count(start=0, step=2)
 print(list(next(iterable) for _ in range(20)))
@@ -44,3 +45,11 @@ rank = ['A','K','Q','J',10,9,8,7,6,5,4,3,2,1]
 suit = ['S','H','D','C']
 cards = itr.product(rank,suit)
 print(*cards)
+
+result = tuple((len(list(c)),int(k))  for k,c in itr.groupby("1222331"))
+print(*result)
+
+alphabets = "".join((input().split()))
+print(alphabets)
+print(*[len(list(c)) for k,c in itr.groupby(sorted(alphabets)) if k == 'a'])
+print(col.Counter(alphabets))
