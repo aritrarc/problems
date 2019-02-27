@@ -11,6 +11,7 @@ using nsDynamic;
 using nsMiscellaneous;
 using nsLinkedList;
 using nsStacksQueues;
+using nsBinaryTree;
 
 namespace HelloWorld
 {
@@ -107,10 +108,9 @@ namespace HelloWorld
             //PalindromeLinkedList.CheckIfPalindrome();
             //ListSum.FindSumOfTwoLinkedLists();
             //LoopDetection.CheckIfCycle();
-            // BinaryTree tree = new BinaryTree();
-            // tree.CreateBinaryTree();
+            BinaryTree.BinaryTreeImplementation();
             // tree.displayBinaryTree();
-            AnimalFarmDataStructure.ImplementAnimalFarm();
+            //AnimalFarmDataStructure.ImplementAnimalFarm();
         }
     }
 }
