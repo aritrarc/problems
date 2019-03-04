@@ -31,31 +31,35 @@ namespace nsBinaryTree
         private void CreateBinaryTree()
         {
             //Create root node first
-            Node rootNode = new Node(7);
+            Node rootNode = new Node(8);
             root = rootNode;
 
             //Create Left children of rootnode
             Node childNode ; 
-            childNode = new Node(3);
+            childNode = new Node(4);
             root.lchild = childNode;
             childNode = new Node(1);
             root.lchild.lchild = childNode;
-            childNode = new Node(4);
+            childNode = new Node(6);
             root.lchild.rchild = childNode;
             childNode = new Node(5);
-            root.lchild.rchild.rchild = childNode;
+            root.lchild.rchild.lchild = childNode;
+            childNode = new Node(2);
+            root.lchild.lchild.rchild = childNode;
+            childNode = new Node(3);
+            root.lchild.lchild.rchild.rchild = childNode;
 
             //Create right childre on root node
-            childNode = new Node(10);
+            childNode = new Node(9);
             root.rchild = childNode;
-            childNode = new Node(8);
-            root.rchild.lchild = childNode;
-            childNode = new Node(12);
-            root.rchild.rchild = childNode;
-            childNode = new Node(11);
-            root.rchild.rchild.lchild = childNode;
-            childNode = new Node(14);
-            root.rchild.rchild.rchild = childNode;
+            // childNode = new Node(8);
+            // root.rchild.lchild = childNode;
+            // childNode = new Node(12);
+            // root.rchild.rchild = childNode;
+            // childNode = new Node(11);
+            // root.rchild.rchild.lchild = childNode;
+            // childNode = new Node(14);
+            // root.rchild.rchild.rchild = childNode;
         }
 
         private void displayBinaryTree()
@@ -136,6 +140,23 @@ namespace nsBinaryTree
         }
         #endregion
 
+        Node LowestCommonAncestor(Node root, int v1, int v2){
+
+            if((v1 >= root.data && v2 <= root.data) || ( v1 <= root.data && v2 >= root.data))
+            {
+                return root;
+            }
+            else if( v1 > root.data)
+            {
+                root = LowestCommonAncestor(root.rchild, v1, v2);
+            }
+            else
+            {
+                 root = LowestCommonAncestor(root.lchild, v1, v2);
+            }
+            return root;
+        }
+
         public static void BinaryTreeImplementation()
         {
             BinaryTree tree = new BinaryTree();
@@ -152,6 +173,10 @@ namespace nsBinaryTree
             Console.WriteLine("");
             Console.WriteLine("Levelorder Traversal:");
             tree.LevelOrder(tree.root);
+            Console.WriteLine("");
+            Console.WriteLine("LCS:");
+            Console.Write("Lowest Common Ancestor" + tree.LowestCommonAncestor(tree.root, 1, 2).data);
+            Console.WriteLine("");
         }
 
     }

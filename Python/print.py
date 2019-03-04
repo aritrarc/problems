@@ -11,7 +11,7 @@ A = [1, 2, 3, 4]
 # eval("s1." + s2 + "s3" )
 
 print([i*i for i in range(5)])
-
+print(ord('b'))
 # for _ in range(int(input())):
 #     try:
 #         a,b = map(int, input().split())
@@ -21,10 +21,15 @@ print([i*i for i in range(5)])
 #     except Exception as e:
 #          print("Error Code:",e)
 
-import re
-for _ in range(int(input())):
-    try:
-        re.compile(input())
-        print("True")
-    except:
-        print("False")
+# import re
+# for _ in range(int(input())):
+#     try:
+#         re.compile(input())
+#         print("True")
+#     except:
+#         print("False")
+
+order = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1357902468"
+print(*sorted(input(), key=order.index), sep='')
+
+print(*sorted(input(), key=lambda c: (c.isdigit() - c.islower(), c in '02468', c)), sep='')
