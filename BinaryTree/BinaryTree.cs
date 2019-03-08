@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace nsBinaryTree
 {
+
     public class Node
     {
         public int data;
@@ -12,18 +13,23 @@ namespace nsBinaryTree
 
         public Node rchild;
 
-        public Node(int nodevalue){
+        public int depth;
+
+        public Node(int nodevalue)
+        {
             data = nodevalue;
             lchild = null;
             rchild = null;
         }
     }
 
+
     public class BinaryTree
     {
-        Node root;
+        public Node root;
 
-        public BinaryTree(){
+        public BinaryTree()
+        {
             //Initialize root to Null. Empty Binary Tree.
             root = null;
         }
@@ -35,7 +41,7 @@ namespace nsBinaryTree
             root = rootNode;
 
             //Create Left children of rootnode
-            Node childNode ; 
+            Node childNode;
             childNode = new Node(4);
             root.lchild = childNode;
             childNode = new Node(1);
@@ -64,17 +70,19 @@ namespace nsBinaryTree
 
         private void displayBinaryTree()
         {
-            displayRecursively(root,0);
+            displayRecursively(root, 0);
         }
 
         void displayRecursively(Node root, int spaces)
         {
-            if(root == null){
+            if (root == null)
+            {
                 return;
             }
             displayRecursively(root.rchild, spaces++);
             Console.Write("\n");
-            for(int i=0; i<=spaces;i++){
+            for (int i = 0; i <= spaces; i++)
+            {
                 Console.Write(" ");
             }
             Console.Write(root.data);
@@ -84,7 +92,8 @@ namespace nsBinaryTree
 
         private int FindHeight(Node root)
         {
-            if(root == null){
+            if (root == null)
+            {
                 return 0;
             }
 
@@ -94,7 +103,8 @@ namespace nsBinaryTree
         #region Traversal
         void PreOrder(Node root)
         {
-            if(root == null){
+            if (root == null)
+            {
                 return;
             }
             Console.Write(root.data + " ");
@@ -102,9 +112,10 @@ namespace nsBinaryTree
             PreOrder(root.rchild);
         }
 
-        void Inorder(Node root)
+        public void Inorder(Node root)
         {
-            if(root == null){
+            if (root == null)
+            {
                 return;
             }
             Inorder(root.lchild);
@@ -112,26 +123,30 @@ namespace nsBinaryTree
             Inorder(root.rchild);
         }
 
-        void LevelOrder(Node root){
+        void LevelOrder(Node root)
+        {
             Queue<Node> queue = new Queue<Node>();
             queue.Enqueue(root.lchild);
             queue.Enqueue(root.rchild);
             Console.Write(root.data + " ");
-            while(queue.Count > 0)
+            while (queue.Count > 0)
             {
                 Node temp = queue.Dequeue();
-                Console.Write(temp.data + " ");  
-                if(temp.lchild != null){
+                Console.Write(temp.data + " ");
+                if (temp.lchild != null)
+                {
                     queue.Enqueue(temp.lchild);
                 }
-                if(temp.rchild != null){
+                if (temp.rchild != null)
+                {
                     queue.Enqueue(temp.rchild);
-                } 
+                }
             }
         }
         void Postorder(Node root)
         {
-            if(root == null){
+            if (root == null)
+            {
                 return;
             }
             Postorder(root.lchild);
@@ -140,21 +155,44 @@ namespace nsBinaryTree
         }
         #endregion
 
-        Node LowestCommonAncestor(Node root, int v1, int v2){
+        Node LowestCommonAncestor(Node root, int v1, int v2)
+        {
 
-            if((v1 >= root.data && v2 <= root.data) || ( v1 <= root.data && v2 >= root.data))
+            if ((v1 >= root.data && v2 <= root.data) || (v1 <= root.data && v2 >= root.data))
             {
                 return root;
             }
-            else if( v1 > root.data)
+            else if (v1 > root.data)
             {
                 root = LowestCommonAncestor(root.rchild, v1, v2);
             }
             else
             {
-                 root = LowestCommonAncestor(root.lchild, v1, v2);
+                root = LowestCommonAncestor(root.lchild, v1, v2);
             }
             return root;
+        }
+
+        Boolean global_variable = true;
+        int curr_min = Int16.MinValue;
+        Boolean IsBST(Node root)
+        {
+            
+            if (root == null)
+            {
+                return true;
+            }
+            IsBST(root.lchild);
+            if (root.data > curr_min)
+            {
+                curr_min = root.data;
+                
+            }else{
+                global_variable = false;
+            }
+            IsBST(root.rchild);
+            return global_variable;
+      
         }
 
         public static void BinaryTreeImplementation()
@@ -177,10 +215,14 @@ namespace nsBinaryTree
             Console.WriteLine("LCS:");
             Console.Write("Lowest Common Ancestor" + tree.LowestCommonAncestor(tree.root, 1, 2).data);
             Console.WriteLine("");
+            Console.WriteLine("ISBST:");
+            Console.Write("ISBST: " + tree.IsBST(tree.root));
+            Console.WriteLine("");
+
         }
 
     }
 
 
-    
+
 }

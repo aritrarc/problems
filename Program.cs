@@ -108,7 +108,8 @@ namespace HelloWorld
             //PalindromeLinkedList.CheckIfPalindrome();
             //ListSum.FindSumOfTwoLinkedLists();
             //LoopDetection.CheckIfCycle();
-            BinaryTree.BinaryTreeImplementation();
+            //BinaryTree.BinaryTreeImplementation();
+            SwapNodesAlgo.DriverMethod();
             // tree.displayBinaryTree();
             //AnimalFarmDataStructure.ImplementAnimalFarm();
         }
