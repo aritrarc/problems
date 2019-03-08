@@ -109,9 +109,10 @@ namespace HelloWorld
             //ListSum.FindSumOfTwoLinkedLists();
             //LoopDetection.CheckIfCycle();
             //BinaryTree.BinaryTreeImplementation();
-            SwapNodesAlgo.DriverMethod();
+            //SwapNodesAlgo.DriverMethod();
             // tree.displayBinaryTree();
             //AnimalFarmDataStructure.ImplementAnimalFarm();
+            HuffManDecoding.DriverCode();
         }
     }
 }
