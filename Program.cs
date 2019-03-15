@@ -112,7 +112,8 @@ namespace HelloWorld
             //SwapNodesAlgo.DriverMethod();
             // tree.displayBinaryTree();
             //AnimalFarmDataStructure.ImplementAnimalFarm();
-            HuffManDecoding.DriverCode();
+            //HuffManDecoding.DriverCode();
+            MinimalBST.DriverMethod(new int[]{2, 4, 8, 10, 12, 15, 17, 18});
         }
     }
 }

@@ -175,9 +175,11 @@ namespace nsBinaryTree
 
         Boolean global_variable = true;
         int curr_min = Int16.MinValue;
+
+        int[] COUNT = new int[10];
         Boolean IsBST(Node root)
         {
-            
+
             if (root == null)
             {
                 return true;
@@ -186,13 +188,15 @@ namespace nsBinaryTree
             if (root.data > curr_min)
             {
                 curr_min = root.data;
-                
-            }else{
+
+            }
+            else
+            {
                 global_variable = false;
             }
             IsBST(root.rchild);
             return global_variable;
-      
+
         }
 
         public static void BinaryTreeImplementation()
@@ -219,6 +223,34 @@ namespace nsBinaryTree
             Console.Write("ISBST: " + tree.IsBST(tree.root));
             Console.WriteLine("");
 
+        }
+
+        public void Display(Node root, int level)
+        {
+            // Base case 
+            int i;
+            if (root == null)
+                return;
+
+
+            // Process right child first  
+            Display(root.rchild, level +1);
+
+            Console.WriteLine("");
+            for (i = 0; i < level; i++)
+                Console.Write("   ");
+
+            Console.WriteLine(root.data);
+
+            // Process left child  
+            Display(root.lchild, level + 1);
+        }
+
+        // Wrapper over Display function
+        public void print2D(Node root)
+        {
+            // Pass initial level as 0  
+            Display(root, 0);
         }
 
     }
