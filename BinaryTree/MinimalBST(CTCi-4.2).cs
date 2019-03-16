@@ -8,11 +8,12 @@ namespace nsBinaryTree
     public class MinimalBST
     {
         public static BinaryTree tree = new BinaryTree();
-        public static void DriverMethod(int[] arr)
+        public static Node DriverMethod(int[] arr)
         {
             Node rootNode = CreateBST(0, arr.Length-1, arr);
             tree.root = rootNode;
             tree.print2D(tree.root);
+            return rootNode;
         }
 
         public static Node CreateBST(int left, int right, int[] arr)
