@@ -116,7 +116,8 @@ namespace HelloWorld
             //MinimalBST.DriverMethod(new int[]{2, 4, 8, 10, 12, 15, 17, 18});
             //DepthLinkedList.DriverMethod();
             //CheckBalanced.DriverMethod();
-            CommonAncestor.DriverMethod();
+            //CommonAncestor.DriverMethod();
+            PathToLeaf.DriverMethod();
         }
     }
 }
