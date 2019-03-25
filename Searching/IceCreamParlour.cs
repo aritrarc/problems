@@ -79,4 +79,38 @@ public class Solution {
         Console.WriteLine((Math.Min(index1, index2) + 1).ToString() + " " + (Math.Max(index1, index2) + 1).ToString());
     }
 
+    public int[] TwoSum(int[] nums, int target) {
+        int[] copyArray = (int[])nums.Clone();
+        Array.Sort(nums);
+        int i = 0;
+        int j = nums.Length - 1;
+        
+        int[] result = new int[2];
+        
+        while(i < j){
+            
+            if(nums[i] + nums[j] == target){
+                result[0] = IndexOfHelper(copyArray, nums[i], -1);
+                result[1] = IndexOfHelper(copyArray, nums[j], result[0]);
+                break;
+            }
+            else if (nums[i] + nums[j] > target){
+                j--;
+            }
+            else{
+                i++;
+            }
+        }
+        return result;
+    }
+    
+    private static int IndexOfHelper(int[] copyArray, int value, int ignore ){
+        for(int i=0; i<copyArray.Length; i++){
+            if(copyArray[i] == value && i != ignore){
+                return i;
+            }
+        }
+        return -1;
+    }
+
 }
