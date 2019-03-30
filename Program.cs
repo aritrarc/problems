@@ -80,7 +80,6 @@ namespace HelloWorld
             //nsArrays.KadanesAlgorithm.GetMaximumSubArraySum(new int[] {-2, -3, 4, -1, -2, 1, 5, -3});
             //nsArrays.FindTripletsSum.GetTripletsInArrayEqualToSum(new int[]{8 ,32 ,1, 7, 10, 50, 19, 21, 2}, 101);
             //nsArrays.FindTripletsSum.ThreeSum(new int[]{-4,-2,1,-5,-4,-4,4,-2,0,4,0,-2,3,1,-5,0});
-            nsSearching.ContainsDuplicates.MyAtoi("-42");
             //nsDynamic.MaxSubArraySum.maxSubsetSum(new int[] {-2 , -3, -1, -4, -6});
             //nsDynamic.Abbreviations.checkIfAbbreviation("dQYHQEMNEFFRFJTQmNWHFVXRXlGTFNBqWQmyOWYWSTDSTMJRYHjBNTEWADLgHVgGIRGKFQSeCXNFNaIFAXOiQORUDROaNoJPXWZXIAABZKSZYFTDDTRGZXVZZNWNRHMvSTGEQCYAJSFvbqivjuqvuzafvwwifnrlcxgbjmigkms","QYHQEMNEFFRFJTQNWHFVXRXGTFNBWQOWYWSTDSTMJRYHBNTEWADLHVGIRGKFQSCXNFNIFAXOQORUDRONJPXWZXIAABZKSZYFTDDTRGZXVZZNWNRHMSTGEQCYAJSF");
             //nsDynamic.Abbreviations.checkIfAbbreviation("daBcd","ABC");
@@ -115,7 +114,7 @@ namespace HelloWorld
             // tree.displayBinaryTree();
             //AnimalFarmDataStructure.ImplementAnimalFarm();
             //HuffManDecoding.DriverCode();
-            //MinimalBST.DriverMethod(new int[]{2, 4, 8, 10, 12, 15, 17, 18});
+            //MinimalBST.DriverMethod(new int[]{10, 5, 15, 3, 7, 13, 18, 1, 6});
             //DepthLinkedList.DriverMethod();
             //CheckBalanced.DriverMethod();
             //CommonAncestor.DriverMethod();
@@ -123,6 +122,7 @@ namespace HelloWorld
             //CheckSubTree.DriverMethod();
             //LongestSubsequences.LongestPalindromicSubString("babad");
             //InorderSuccessor.DriverMethod();
+            SwapNodeInPairs.Driver();
         }
     }
 }
