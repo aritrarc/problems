@@ -8,6 +8,7 @@ namespace nsBinaryTree
     public class PathToLeaf
     {
         public static BinaryTree tree = new BinaryTree();
+        public static IList<IList<int>> pathsum = new List<IList<int>>();
         public static void DriverMethod()
         {
             Node rootNode = new Node(1);
@@ -16,8 +17,16 @@ namespace nsBinaryTree
             //Node rootnode = MinimalBST.DriverMethod(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9});
             tree.print2D(tree.root);
             int[] pathArray = new int[1000];
+            pathsum.Clear();
             //Node ancestor = FindAncestor(tree.root, 10, 9);
-            FindPathToLeaf(tree.root, pathArray, 0);
+            //FindPathToLeaf(tree.root, pathArray, 0);
+            ListPathSum(tree.root, 0, 2, new List<int>(), 0);
+            foreach(List<int> list in pathsum){
+                foreach(int val in list){
+                    Console.Write(val + ",");
+                }
+                Console.WriteLine("");
+            }
 
         }
 
@@ -52,34 +61,22 @@ namespace nsBinaryTree
         public static void CreateBinaryTree(Node root)
         {
             Node curr_node;
-            curr_node = new Node(2);
+            curr_node = new Node(-2);
             root.lchild = curr_node;
-            curr_node = new Node(3);
+            curr_node = new Node(-3);
             root.rchild = curr_node;
 
-            curr_node = new Node(4);
+            curr_node = new Node(1);
             root.lchild.lchild = curr_node;
-            curr_node = new Node(5);
+            curr_node = new Node(3);
             root.lchild.rchild = curr_node;
 
-            curr_node = new Node(6);
+            curr_node = new Node(-2);
             root.rchild.lchild = curr_node;
-            curr_node = new Node(7);
-            root.rchild.rchild = curr_node;
 
-            curr_node = new Node(8);
+            curr_node = new Node(-1);
             root.lchild.lchild.lchild = curr_node;
-            curr_node = new Node(9);
-            root.lchild.rchild.lchild = curr_node;
-            curr_node = new Node(10);
-            root.lchild.rchild.rchild = curr_node;
 
-            curr_node = new Node(11);
-            root.rchild.lchild.lchild = curr_node;
-            curr_node = new Node(12);
-            root.rchild.lchild.rchild = curr_node;
-            curr_node = new Node(13);
-            root.rchild.rchild.rchild = curr_node;
             // curr_node = new Node(2);
             // root.lchild.rchild.lchild = curr_node;
 
@@ -112,6 +109,36 @@ namespace nsBinaryTree
 
             FindPathSum(root.lchild, curr_sum, sum);
             FindPathSum(root.rchild, curr_sum, sum);
+        }
+
+        public static void ListPathSum(Node root, int curr_sum, int sum, List<int> path, int index)
+        {
+            if (root == null)
+            {
+                return;
+            }
+
+            if(path.Count > 0 && index < path.Count){
+                path[index] = root.data;
+            }else{
+                path.Add(root.data);
+            }
+            index++;
+
+            curr_sum = curr_sum + root.data;
+
+            if (curr_sum == sum)
+            {
+                if (root.lchild == null && root.rchild == null)
+                {
+                    pathsum.Add(path.ToList().GetRange(0, index));
+                    return;
+                }
+            }
+
+            
+            ListPathSum(root.lchild, curr_sum, sum, path, index);
+            ListPathSum(root.rchild, curr_sum, sum, path, index);
         }
     }
 
