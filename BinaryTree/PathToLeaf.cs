@@ -89,6 +89,30 @@ namespace nsBinaryTree
             // root.lchild.lchild.lchild.rchild = curr_node;
 
         }
+
+        public static Boolean isPathSum = false;
+        public static void FindPathSum(Node root, int curr_sum, int sum)
+        {
+            if (root == null)
+            {
+                return;
+            }
+
+
+            curr_sum = curr_sum + root.data;
+
+            if (curr_sum == sum)
+            {
+                if (root.lchild == null && root.rchild == null)
+                {
+                    isPathSum = true;
+                    return;
+                }
+            }
+
+            FindPathSum(root.lchild, curr_sum, sum);
+            FindPathSum(root.rchild, curr_sum, sum);
+        }
     }
 
 }
